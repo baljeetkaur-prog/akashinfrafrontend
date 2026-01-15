@@ -1,0 +1,1358 @@
+/* Banner */
+.opportunities-banner {
+  width: 100%;
+  padding: 120px 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  background-color: #111;
+}
+
+.opportunities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.opportunities-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.opportunities-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.opportunities-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+
+/* Content Wrapper */
+.opportunities-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* WRAPPER */
+.oppor-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  align-items: start;
+  padding: 10px 0;
+}
+
+/* LEFT SECTION */
+.oppor-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top:0; 
+  margin-bottom: 10px;
+}
+
+.highlight-orange {
+  color: #f15928;
+}
+
+.oppor-underline {
+  width: 150px;
+  height: 2px;
+  background-color: #f15928;
+  margin: 10px 0 20px 0;
+}
+
+.oppor-desc {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.oppor-btn {
+  background-color: #f15928;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+    display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.oppor-arrow {
+  font-size: 16px;
+}
+.oppor-btn:hover {
+  background-color: #111;
+}
+
+/* RIGHT SECTION */
+.oppor-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+.oppor-card {
+  position: relative;
+  text-align: left;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/* IMAGE WRAPPER */
+.oppor-img-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+    height: 200px; 
+}
+
+/* IMAGE ZOOM ON HOVER */
+.oppor-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.7s ease-in-out;
+}
+
+.oppor-card:hover .oppor-img {
+  transform: scale(1.12);
+}
+
+/* WHITE GLASS OVERLAY */
+.oppor-img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.35s ease;
+}
+
+.oppor-card:hover .oppor-img-wrapper::after {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* TITLE */
+.oppor-card-title {
+  font-size: 17px;
+  color: #000;
+  margin: 10px 0 10px 0;
+  font-weight: 600;
+}
+
+/* BULLET LIST */
+.oppor-card-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 15px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.oppor-card-paras p {
+  font-size: 15px;
+  color: #444;
+  margin: 4px 0;
+  line-height: 1.6;
+  padding-left: 18px;
+  position: relative;
+}
+
+/* custom bullet circle */
+.oppor-card-paras p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f15928;
+  font-size: 18px;
+  line-height: 1.6;
+}
+/* Plotting Section Wrapper */
+.plotting-wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Center Image */
+.plotting-img-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.plotting-img {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Content Layout */
+.plotting-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+/* Left Paragraphs */
+.plotting-left {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.plotting-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+/* Right Points */
+.plotting-right {
+  flex: 0.8;
+  min-width: 250px;
+  text-align: left;
+}
+/* Small Heading */
+.plotting-small-heading {
+ font-size: 16px;
+    font-weight: 600;
+    color: #f15928;
+    margin-top: 0;
+    margin-bottom: 0px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Big Heading */
+.plotting-big-heading {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    color: #111;
+}
+.plotting-btn {
+  background-color: #f15928;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.plotting-btn:hover {
+  background-color: #111;
+}
+
+.plotting-arrow {
+  font-size: 16px;
+}
+/* Government & Policy Section Wrapper */
+.govt-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto 0;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.govt-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.govt-img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* RIGHT HEADINGS */
+.govt-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.govt-small-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f15928;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.govt-big-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top:0; 
+  margin-bottom: 20px;
+  color: #111;
+}
+.employment-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.employment-heading {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.employment-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.employment-card {
+  position: relative;
+  background-color: #fff;
+  padding: 30px 50px; /* padding increased so inner border fits */
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* shadow outside */
+}
+.employment-card:hover{
+  cursor: pointer;
+}
+
+/* Inner border */
+.employment-card::before {
+  content: "";
+  position: absolute;
+  inset: 20px; /* distance from the edges */
+  border: 2px solid #000; /* inner border */
+  pointer-events: none;
+}
+
+.card-icon {
+  font-size: 40px;
+  margin-top: 5px; 
+  color: #f15928;
+  margin-bottom: 5px;
+}
+.employment-subtext {
+  max-width: 700px;
+  margin: 0 auto 40px; /* center + spacing below */
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-top:0; 
+}
+
+.card-heading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top:0; 
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Overlay rectangles */
+.emp-card-overlay {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #f15928;
+  z-index: 5; /* keeps overlays above inner border */
+}
+.top-left {
+  top: 0;    /* exactly touching top edge */
+  left: 0;   /* exactly touching left edge */
+}
+
+.bottom-right {
+  bottom: 0; /* exactly touching bottom edge */
+  right: 0;  /* exactly touching right edge */
+}
+/* Sustainability Section Wrapper */
+.sustain-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 20px;
+}
+
+/* LEFT TEXT SIDE */
+.sustain-left {
+  flex: 1;
+}
+
+.sustain-small-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f15928;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.sustain-big-heading {
+ font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.sustain-desc {
+font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* RIGHT IMAGE SIDE */
+.sustain-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sustain-img {
+  width: 100%;
+  max-width: 540px;
+  border-radius: 4px;
+}
+/* Invest CTA Section */
+.invest-cta-section {
+  position: relative;
+  width: calc(100% + 40px);   /* full width including parent's horizontal padding */
+  margin-left: -20px;         /* negate parent padding */
+  background-color: #f15928;
+  color: #fff;
+   overflow: hidden;
+  padding: 0;
+  box-sizing: border-box;
+}
+.invest-cta-section:hover{
+  cursor: pointer;
+}
+
+/* Inner container – content max width 1200px */
+.invest-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: flex;
+  align-items: center;          /* vertically center */
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+/* Left Text */
+.invest-cta-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top:0; 
+}
+
+.invest-cta-left p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.9;
+  width: 600px;
+  margin: 0;
+}
+
+/* CTA Button */
+.invest-cta-btn {
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  color: #f15928;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+/* Right Decorative Circles */
+.invest-cta-right {
+  position: absolute;
+  right: -550px;                /* align to the extreme right of CTA background */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1200px;            /* bigger container to hold larger circles */
+  height: 1200px;
+  pointer-events: none;
+  overflow: hidden;        /* hide anything outside this box */
+  z-index: 0;              /* behind content */
+}
+
+
+.invest-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.invest-circle-1 { width: 250px; height: 250px; opacity: 0.6; }
+.invest-circle-2 { width: 320px; height: 320px; opacity: 0.5; }
+.invest-circle-3 { width: 400px; height: 400px; opacity: 0.35; }
+.invest-circle-4 { width: 480px; height: 480px; opacity: 0.2; }
+.invest-circle-5 { width: 560px; height: 560px; opacity: 0.1; }
+.invest-circle-6 { width: 640px; height: 640px; opacity: 0.05; }
+.invest-circle-7 { width: 720px; height: 720px; opacity: 0.04; }
+@media (max-width: 768px) {
+
+  /* Banner spacing */
+  .opportunities-banner {
+    padding: 80px 20px;
+  }
+
+  .opportunities-heading {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .opportunities-breadcrumb {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  /* Content section spacing */
+  .opportunities-content {
+    padding: 50px 15px !important; /* reduce top & bottom gap */
+  }
+
+  .oppor-wrapper {
+    margin-top: 30px; /* tighter start */
+  }
+}
+@media (max-width: 480px) {
+
+  /* Banner */
+  .opportunities-banner {
+    padding: 60px 15px;
+  }
+
+  .opportunities-heading {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .opportunities-breadcrumb {
+    font-size: 13px;
+  }
+
+  /* Content */
+  .opportunities-content {
+    padding: 40px 12px !important;
+  }
+
+  .oppor-wrapper {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .oppor-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .oppor-left {
+    order: 1;
+    text-align: left;
+  }
+
+  .oppor-right {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 16px; /* 🔥 balance left & right space */
+  }
+
+  /* 🔥 FULL WIDTH CARD */
+  .oppor-card {
+    width: 100%;
+    max-width: 100%; /* 🔥 IMPORTANT */
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  /* Image wrapper reset */
+  .oppor-img-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Image centered */
+  .oppor-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+
+  .oppor-card-title {
+    font-size: 18px;
+    margin: 14px 0 8px;
+  }
+
+  .oppor-card-paras p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 480px) {
+
+  .oppor-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px; 
+  }
+
+  .oppor-left {
+    order: 1;
+    text-align: left;
+  }
+
+  .oppor-right {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 12px; /* slightly tighter padding for small screens */
+  }
+
+  /* Full width card */
+  .oppor-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  /* Image wrapper */
+  .oppor-img-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Image centered */
+  .oppor-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+
+  .oppor-card-title {
+    font-size: 16px;
+    margin: 12px 0 6px;
+  }
+
+  .oppor-card-paras p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+@media (max-width: 768px) {
+
+  /* Wrapper */
+  .plotting-wrapper {
+    margin-top: 30px;
+    text-align: left;
+    padding: 0 10px; 
+  }
+
+  /* Reorder content */
+  .plotting-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Headings first */
+  .plotting-left {
+    order: 1;
+    text-align: left;
+  }
+
+  /* Paragraph second */
+  .plotting-right {
+    order: 2;
+    text-align: left;
+  }
+
+  /* Image last */
+  .plotting-img-container {
+    order: 3;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .plotting-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Font adjustments */
+  .plotting-big-heading {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .plotting-small-heading {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .plotting-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .plotting-btn {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+}
+@media (max-width: 480px) {
+
+  .plotting-big-heading {
+    font-size: 22px;
+  }
+
+  .plotting-text {
+    font-size: 13px;
+  }
+
+  .plotting-btn {
+    width: fit-content;
+    font-size: 13px;
+    padding: 8px 18px;
+  }
+
+  .plotting-img {
+    border-radius: 6px;
+  }
+}
+@media (max-width: 768px) {
+
+  .govt-wrapper {
+    flex-direction: column-reverse; /* 🔥 content first */
+    gap: 30px;
+    padding: 0 20px;               /* ✅ About-style side padding */
+    margin-top: 40px;
+  }
+
+  .govt-right {
+    text-align: left;
+  }
+
+  .govt-left {
+    justify-content: center;
+  }
+
+  .govt-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .govt-small-heading {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .govt-big-heading {
+    font-size: 26px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 480px) {
+
+  .govt-wrapper {
+    padding: 0 16px;   /* slightly tighter */
+    gap: 24px;
+  }
+
+  .govt-big-heading {
+    font-size: 22px;
+  }
+
+  .govt-img {
+    border-radius: 4px;
+  }
+}
+/* ======================
+   MOBILE: 481px – 768px
+   ====================== */
+@media (max-width: 768px) {
+
+  .employment-section {
+    padding: 0 20px; /* match About section padding */
+    text-align: left;
+  }
+
+  .employment-heading {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .employment-subtext {
+    margin: 0 0 30px;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .employment-cards-grid {
+    grid-template-columns: 1fr; /* single column */
+    gap: 24px;
+  }
+
+  .employment-card {
+    padding: 28px 36px;
+    text-align: center; /* text inside card left aligned */
+  }
+
+  /* ICON CENTER ONLY */
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+    .card-heading,
+  .card-text {
+    text-align: center !important;
+  }
+
+  .employment-card::before {
+    inset: 16px;
+  }
+
+  .card-heading {
+    font-size: 17px;
+    text-align: left; /* ensure heading left */
+  }
+
+  .card-text {
+    font-size: 14px;
+    text-align: left; /* ensure paragraph left */
+  }
+
+  .emp-card-overlay {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ======================
+   EXTRA SMALL SCREENS: ≤480px
+   ====================== */
+@media (max-width: 480px) {
+
+  .employment-section {
+    padding: 0 12px; /* slight tighter padding */
+  }
+
+  .employment-heading {
+    font-size: 24px;
+  }
+
+  .employment-subtext {
+    font-size: 14px;
+  }
+
+  .employment-card {
+    padding: 24px 28px;
+    text-align: left; /* keep text left */
+  }
+
+  .employment-card::before {
+    inset: 14px;
+  }
+
+  .card-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .card-heading {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 13px;
+  }
+
+  .emp-card-overlay {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* =========================
+   MOBILE: 481px – 768px
+   ========================= */
+@media (max-width: 768px) {
+
+  .sustain-wrapper {
+    flex-direction: column; /* stack vertically */
+    align-items: flex-start; /* text aligned left */
+    gap: 30px;
+    padding: 50px 20px; /* padding similar to About section */
+  }
+
+  /* Text first */
+  .sustain-left {
+    order: 1;
+    text-align: left;
+    width: 100%;
+  }
+
+  .sustain-small-heading {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .sustain-big-heading {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .sustain-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  /* Image below text */
+  .sustain-right {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sustain-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
+
+/* =========================
+   EXTRA SMALL SCREENS: ≤480px
+   ========================= */
+@media (max-width: 480px) {
+
+  .sustain-wrapper {
+    padding: 40px 16px;
+    gap: 25px;
+  }
+
+  .sustain-small-heading {
+    font-size: 14px;
+  }
+
+  .sustain-big-heading {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+
+  .sustain-desc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .sustain-img {
+    border-radius: 6px;
+  }
+}
+@media (max-width: 768px) {
+
+  /* Reset full-width background */
+  .invest-cta-section {
+    width: 100%;
+    margin-left: 0;
+    padding: 40px 20px; /* horizontal padding consistent with other sections */
+    box-sizing: border-box;
+  }
+
+  /* Container flex layout */
+  .invest-cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0; /* container padding handled by section */
+    gap: 25px;
+  }
+
+  /* Left text content */
+  .invest-cta-left {
+    width: 100%;
+    text-align: left;
+  }
+
+  .invest-cta-left h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+  }
+
+  .invest-cta-left p {
+    font-size: 15px;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .invest-cta-btn {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+
+  /* Hide decorative circles */
+  .invest-cta-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .invest-cta-section {
+    padding: 30px 16px; /* consistent left-right padding */
+  }
+
+  .invest-cta-left h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .invest-cta-left p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .invest-cta-btn {
+    font-size: 14px;
+    padding: 9px 16px;
+  }
+}
+@media (max-width: 768px) {
+
+  /* Reset full-width background */
+  .invest-cta-section {
+    width: 100%;
+    margin-left: 0;
+    padding: 35px 20px; /* slightly smaller padding */
+    box-sizing: border-box;
+  }
+
+  /* Container flex layout */
+  .invest-cta-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    gap: 20px;
+  }
+
+  /* Left text content */
+  .invest-cta-left {
+    width: 100%;
+    text-align: left;
+  }
+
+  .invest-cta-left h2 {
+    font-size: 24px; /* reduced from 26px */
+    margin-bottom: 10px;
+  }
+
+  .invest-cta-left p {
+    font-size: 14px; /* reduced from 15px */
+    line-height: 1.5;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .invest-cta-btn {
+    font-size: 14px; /* reduced from 15px */
+    padding: 9px 16px;
+  }
+
+  /* Hide decorative circles */
+  .invest-cta-right {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .invest-cta-section {
+    padding: 25px 16px; /* slightly smaller padding */
+  }
+
+  .invest-cta-left h2 {
+    font-size: 20px; /* reduced from 22px */
+    margin-bottom: 8px;
+  }
+
+  .invest-cta-left p {
+    font-size: 13px; /* reduced from 14px */
+    margin-bottom: 6px;
+  }
+
+  .invest-cta-btn {
+    font-size: 13px; /* reduced from 14px */
+    padding: 8px 14px;
+  }
+}
+/* =========================
+   TABLET: ≤768px
+   ========================= */
+@media (max-width: 768px) {
+  .oppor-title {
+    font-size: 30px; /* smaller than desktop */
+  }
+}
+
+/* =========================
+   MOBILE: ≤480px
+   ========================= */
+@media (max-width: 480px) {
+  .oppor-title {
+    font-size: 24px; /* even smaller for mobile */
+  }
+}
+/* =========================
+   TABLET: ≤768px
+   ========================= */
+@media (max-width: 768px) {
+  /* Reduce top margin before Investment Highlights */
+  .oppor-wrapper {
+    margin-top: 5px !important; /* reduced from 30-40px */
+  }
+
+  /* Reduce top margin before Government Section */
+  .govt-wrapper {
+    margin-top: 10px; /* reduced from 40px */
+    gap: 25px; /* slightly tighter */
+    padding: 0 20px;
+  }
+
+  /* Reduce top margin before Sustainability Section */
+  .sustain-wrapper {
+    padding: 30px 20px; /* reduced vertical padding */
+    gap: 25px;
+    padding-top:0px; 
+  }
+}
+
+/* =========================
+   MOBILE: ≤480px
+   ========================= */
+@media (max-width: 480px) {
+  /* Investment Highlights */
+  .oppor-wrapper {
+    margin-top: 15px; /* tighter spacing */
+  }
+
+  /* Government Section */
+  .govt-wrapper {
+    margin-top: 15px; 
+    gap: 20px;
+    padding: 0 16px;
+  }
+
+  /* Sustainability Section */
+  .sustain-wrapper {
+    padding: 30px 16px; /* less top-bottom space */
+    gap: 20px;
+    padding-top:0; 
+  }
+}
+/* Remove all default link styling */
+.oppor-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Ensure link does not override button color */
+.oppor-link:visited,
+.oppor-link:hover,
+.oppor-link:active {
+  color: inherit;
+}
+.plotting-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.plotting-link:hover,
+.plotting-link:visited,
+.plotting-link:active {
+  color: inherit;
+}
+@media (max-width: 768px) {
+  /* Opportunities Section */
+  .oppor-title {
+    font-size: 24px; /* match About heading */
+  }
+  .oppor-desc,
+  .oppor-card-text,
+  .oppor-card-paras p {
+    font-size: 14px; /* match About paragraph */
+  }
+  .oppor-card-title {
+    font-size: 16px;
+  }
+  .oppor-btn {
+    font-size: 14px;
+  }
+
+  /* Plotting Section */
+  .plotting-small-heading {
+    font-size: 14px;
+  }
+  .plotting-big-heading {
+    font-size: 24px;
+  }
+  .plotting-text {
+    font-size: 14px;
+  }
+  .plotting-btn {
+    font-size: 14px;
+  }
+
+  /* Government Section */
+  .govt-small-heading {
+    font-size: 14px;
+  }
+  .govt-big-heading {
+    font-size: 24px;
+  }
+
+  /* Employment Section */
+  .employment-heading {
+    font-size: 24px;
+  }
+  .employment-subtext {
+    font-size: 14px;
+  }
+  .card-heading {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 14px;
+  }
+
+  /* Sustainability Section */
+  .sustain-small-heading {
+    font-size: 14px;
+  }
+  .sustain-big-heading {
+    font-size: 24px;
+  }
+  .sustain-desc {
+    font-size: 14px;
+  }
+
+  /* Invest CTA Section */
+  .invest-cta-left h2 {
+    font-size: 24px;
+  }
+  .invest-cta-left p {
+    font-size: 14px;
+  }
+  .invest-cta-btn {
+    font-size: 14px;
+  }
+}
+
+.opportunities-breadcrumb-link {
+  color: #f15928;        /* match icon color */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+/* Remove underline & blue color from plotting button link */
+.plotting-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+.plotting-link:visited,
+.plotting-link:hover,
+.plotting-link:active,
+.plotting-link:focus {
+  text-decoration: none;
+  color: inherit;
+}

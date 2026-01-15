@@ -1,0 +1,315 @@
+/* ================================
+   BANNER
+=================================== */
+.seaport-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.seaport-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seaport-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.seaport-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.seaport-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+
+/* ===========================
+   Banner – Media Queries
+============================= */
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .seaport-banner {
+    padding: 100px 20px;
+  }
+  .seaport-heading {
+    font-size: 42px;
+  }
+  .seaport-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+  .seaport-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .seaport-banner {
+    padding: 80px 16px;
+  }
+  .seaport-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .seaport-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+  .seaport-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .seaport-banner {
+    padding: 70px 12px;
+  }
+  .seaport-heading {
+    font-size: 28px;
+  }
+  .seaport-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+  }
+  .seaport-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .seaport-banner {
+    padding: 60px 10px;
+  }
+  .seaport-heading {
+    font-size: 24px;
+  }
+  .seaport-breadcrumb {
+    font-size: 13px;
+    gap: 4px;
+  }
+  .seaport-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* ================================
+   CONTENT AREA
+=================================== */
+.seaport-content {
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+/* Section wrapper (Zig-Zag layout) */
+.seaport-section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.seaport-section-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Left image */
+.seaport-left-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.seaport-left-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Right content */
+.seaport-right-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.seaport-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-top:0; 
+  margin-bottom: 15px;
+}
+
+.seaport-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+/* ================================
+   BELOW TEXT BLOCKS
+=================================== */
+.seaport-section-text {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+/* ================================
+   KEY POINTS
+=================================== */
+.seaport-points-section {
+  max-width: 1200px;
+  margin:20px auto;
+}
+
+.seaport-points-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.seaport-points-section li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.seaport-points-section li::before {
+  content: "✓";
+  font-family: "cursive";
+  color: #f15928;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+/* ================================
+   FAQ SECTION
+=================================== */
+.seaport-faq-section {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.faq-item {
+  padding: 13px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+}
+
+.faq-icon {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-item.open h3 {
+  color: #f15928;
+}
+
+.faq-item.open .faq-icon {
+  color: #f15928;
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  margin-top: 20px;
+  padding-left: 34px;
+  font-size: 15px;
+  color: #555;
+}
+
+/* ================================
+   RESPONSIVE
+=================================== */
+@media (max-width: 768px) {
+  .seaport-heading {
+    font-size: 32px;
+  }
+
+  .seaport-section-wrapper,
+  .seaport-section-wrapper.reverse {
+    flex-direction: column-reverse; 
+  }
+
+  .seaport-title {
+    font-size: 26px;
+  }
+
+  .seaport-para {
+    font-size: 14px;
+  }
+}
+/* ================================
+   BELOW TEXT BLOCKS
+=================================== */
+.seaport-section-text {
+  max-width: 1200px;
+  margin: 10px auto; /* existing */
+}
+
+/* Reduce space between consecutive headings/paragraphs */
+.seaport-section-text .seaport-title {
+  margin-top: 20px;   /* previously 0 or 30px */
+  margin-bottom: 10px; /* reduces gap with paragraph */
+}
+
+.seaport-section-text .seaport-para {
+  margin-bottom: 10px; /* optional: reduces space between paragraphs */
+}
+/* ================================
+   MOBILE ADJUSTMENTS
+=================================== */
+@media (max-width: 768px) {
+  /* Reduce space above/below section wrapper */
+  .seaport-section-wrapper,
+  .seaport-section-wrapper.reverse {
+    margin: 10px auto; /* reduces top/bottom space */
+  }
+
+  /* Reduce space above/below text blocks */
+  .seaport-section-text {
+    margin: 5px auto; /* reduces top/bottom space */
+  }
+}
+.seaport-breadcrumb-link {
+  color: #f15928;         /* match icon color or your preferred color */
+  text-decoration: none;   /* remove underline */
+  font-weight: 500;
+}

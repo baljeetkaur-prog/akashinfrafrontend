@@ -1,0 +1,308 @@
+.featinvest-section {
+  background-color: #f2f6f6;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featinvest-left-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.featinvest-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.featinvest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* change from flex-start to center */
+  margin-bottom: 50px;
+  flex-wrap: wrap; /* keeps responsive behavior */
+  gap: 20px;
+}
+.featinvest-header-text {
+  max-width: 800px; /* keeps text from stretching too far */
+}
+
+.featinvest-header h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.featinvest-header p {
+  font-size: 16px;
+  margin-bottom: 0; /* remove extra margin since flex handles spacing */
+  color: #555;
+}
+
+.featinvest-view-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Cards wrapper */
+.featinvest-cards-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.featinvest-property-card {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.featinvest-card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.featinvest-card-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.9s ease-in-out; /* smooth scaling */
+}
+
+.featinvest-card-image:hover img {
+  transform: scale(1.20); /* slightly enlarge on hover */
+}
+
+.featinvest-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.95); /* nearly solid white */
+  color: #000; /* text stays readable */
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(4px); /* subtle glass effect */
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.8); /* subtle border */
+}
+.featinvest-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  background-color: #fff;
+  padding: 17px 15px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.featinvest-price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.featinvest-price-section h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #000;
+}
+
+.featinvest-divider {
+  height: 1px;
+  background-color: #ccc;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.featinvest-features {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.featinvest-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 11px;
+  color: #555;
+  gap: 4px;
+}
+
+.featinvest-icon {
+  color: #f15928;
+  font-size: 12px;
+}
+
+.featinvest-text {
+  margin: 0;
+  font-weight: 500;
+}
+
+.featinvest-arrow-icon {
+  position: absolute;
+  top: -19px;
+  right: 12px;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 14px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 3;
+}
+.featinvest-arrow-icon:hover {
+  background-color: #f15928; /* change background */
+  animation: slideArrow 0.6s ease; /* slide left-right */
+}
+@keyframes slideArrow {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-2px); }
+  40% { transform: translateX(2px); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+  100% { transform: translateX(0); }
+}
+
+.featinvest-card-title {
+  margin-top: 15px;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+  margin-bottom:10px; 
+}
+
+.featinvest-card-location {
+  font-size: 17px;
+  color: #888;
+  text-align: center;
+  margin-top:0px; 
+
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .featinvest-cards-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .featinvest-card-image img {
+    height: 250px;
+  }
+}
+.featinvest-starting-text {
+  font-size: 12px;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 1px;
+  display: block;
+}
+.featinvest-property-card:hover {
+  cursor: pointer;
+}
+
+/* Make the card title hoverable as well */
+.featinvest-card-title:hover {
+  cursor: pointer;
+}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .featinvest-section {
+    padding: 40px 30px; /* reduce top/bottom padding */
+  }
+
+  .featinvest-header h2 {
+    font-size: 28px; /* slightly smaller heading */
+  }
+
+  .featinvest-header p {
+    font-size: 14px; /* slightly smaller text */
+  }
+
+  .featinvest-card-image img {
+    height: 260px; /* reduce card image height */
+  }
+}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .featinvest-section {
+    padding: 30px 30px; /* reduce top/bottom padding */
+  }
+
+  .featinvest-header h2 {
+    font-size: 28px; /* smaller heading */
+  }
+
+  .featinvest-header p {
+    font-size: 14px; /* smaller text */
+  }
+
+  /* Slightly taller card image */
+  .featinvest-card-image img {
+    height: 300px; /* bigger for mobile */
+  }
+
+  /* Overlay adjustments for mobile */
+.featinvest-card-overlay {
+    width: 80%; /* wider overlay */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  /* Divider stays inside overlay */
+.featinvest-divider {
+    width: 100%; /* already 100% */
+    align-self: stretch; /* make it take full overlay width */
+    margin: 6px 0;
+  }
+
+  /* Stack features vertically */
+  .featinvest-features {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6px;
+    width: 100%;
+  }
+
+
+  .featinvest-arrow-icon {
+    top: -15px;
+    right: 10px;
+  }
+    .featinvest-card-title {
+    font-size: 20px; /* smaller than desktop */
+  }
+
+  .featinvest-card-location {
+    font-size: 14px; /* smaller than desktop */
+  }
+}
+
+

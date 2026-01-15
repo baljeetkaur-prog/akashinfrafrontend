@@ -1,0 +1,805 @@
+/* Connectivities.css */
+
+/* Section wrapper */
+.connectivities-section {
+  background-color: #f2f6f6;
+  padding: 140px 20px 40px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Left-bg (half-left) */
+.left-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  pointer-events: auto;
+}
+
+/* Container that holds left cards and right content */
+.connectivities-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 34px;
+   justify-content: space-between;
+  align-items: stretch;   /* important */
+  flex-wrap: nowrap;      /* force single row */
+}
+
+.left-row {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  flex: 0 0 auto;
+  width: fit-content;
+  align-items: stretch;
+}
+
+/* Tall card styling */
+.tall-card {
+  height: 450px; /* long in height but less wide */
+  border-radius: 8px;
+  width: 340px; 
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  background: #ddd;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Overlay inside tall card: simple bottom black fog */
+.card-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%; /* adjust height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* content sticks to bottom */
+  gap: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  pointer-events: auto;
+
+  /* Darker black fog gradient */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,       /* fully solid black at bottom */
+    rgba(0, 0, 0, 0.85) 25%,  
+    rgba(0, 0, 0, 0.6) 50%,  
+    rgba(0, 0, 0, 0.3) 75%,  
+    rgba(0, 0, 0, 0) 100%      /* fully transparent at top */
+  );
+}
+
+
+
+/* card title */
+.card-title {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+  padding: 6px 12px;
+}
+
+/* outline button inside overlay */
+.outline-btn {
+  background: transparent;
+  border: 1px solid #f15928;
+  color: #f15928;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease;
+}
+
+.outline-btn:hover {
+  transform: translateY(-3px);
+  background: rgba(241,89,40,0.08);
+}
+
+/* Right column */
+.right-content {
+  flex: 1;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.subtitle {
+  color: #f15928;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.connectivities-main-heading {
+  font-size: 40px;
+  margin: 0;
+  color: #0b0b0b;
+}
+
+.intro {
+  color: #4b4b4b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-top: 0px;
+}
+
+/* Thin divider */
+.divider-thin {
+  height: 1px;
+  background: rgba(0,0,0,0.06);
+  margin: 2px 0;
+}
+
+/* Big stats row */
+.big-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-number {
+  font-size: 35px;
+  font-weight: 700;
+  color: #f15928;
+}
+
+.stat-text {
+  font-size: 16px;
+  color: #777;
+}
+
+/* White CTA button */
+.white-cta {
+  align-self: flex-start;
+  margin-top: 6px;
+  background: #000;
+  color: #fff;
+  border: none; 
+  font-size: 13px; 
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+
+
+/* ─────────────── GALLERY – FINAL 100% VISIBLE ON 4TH HOVER ─────────────── */
+
+.gallery-wrapper {
+  margin: 40px auto 0;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  overflow: visible !important; /* ← Crucial fix */
+}
+
+.gallery {
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+  position: relative;
+}
+
+/* Default widths */
+.gallery-card:nth-child(1) { width: 20%; }
+.gallery-card:nth-child(2) { width: 20%; }
+.gallery-card:nth-child(3) { width: 40%; }
+.gallery-card:nth-child(4) { width: 20%; }
+
+.gallery-card {
+  position: relative;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.68s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ───── OVERLAY (same style as tall cards) ───── */
+.gallery-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-bottom: 28px;
+  text-align: center;
+  pointer-events: auto;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 25%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.3) 75%, transparent 100%);
+  opacity: 0;
+  transform: translateY(40%);
+  transition: all 0.5s ease-out;
+}
+
+
+.gallery-overlay.active,
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-overlay .card-title {
+  margin: 0;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.gallery-overlay .outline-btn {
+  background: transparent;
+  border: 1.5px solid #f15928;
+  color: #f15928;
+  padding: 11px 28px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-bottom: 20px; 
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gallery-overlay .outline-btn:hover {
+  transform: translateY(-4px);
+  background: rgba(241,89,40,0.12);
+}
+
+/* ───── HOVER BEHAVIOR – NOW 4TH CARD SHOWS FULLY ───── */
+
+/* 1st & 2nd hover – elegant expansion */
+.gallery:hover .gallery-card:nth-child(1):hover,
+.gallery:hover .gallery-card:nth-child(2):hover {
+  width: 48% !important;
+  z-index: 20;
+}
+
+.gallery:hover .gallery-card:nth-child(1):hover ~ .gallery-card:nth-child(2),
+.gallery:hover .gallery-card:nth-child(2):hover ~ .gallery-card:nth-child(1) {
+  width: 18% !important;
+}
+
+.gallery:hover .gallery-card:nth-child(1):hover ~ .gallery-card:nth-child(3),
+.gallery:hover .gallery-card:nth-child(2):hover ~ .gallery-card:nth-child(3),
+.gallery:hover .gallery-card:nth-child(1):hover ~ .gallery-card:nth-child(4),
+.gallery:hover .gallery-card:nth-child(2):hover ~ .gallery-card:nth-child(4) {
+  width: 17% !important;
+}
+
+/* 4TH CARD HOVER – FULLY VISIBLE EXPANSION TO LEFT */
+.gallery:hover .gallery-card:nth-child(4):hover {
+  width: 40% !important;           /* Bigger expansion */
+  transform: translateX(-50%) !important;  /* Stronger left push */
+  z-index: 30;
+}
+
+/* Collapse 1st & 2nd gently */
+.gallery:hover .gallery-card:nth-child(4):hover ~ .gallery-card:nth-child(1),
+.gallery:hover .gallery-card:nth-child(4):hover ~ .gallery-card:nth-child(2) {
+  width: 14% !important;
+}
+
+/* 3rd card shifts left gracefully */
+.gallery:hover .gallery-card:nth-child(4):hover ~ .gallery-card:nth-child(3) {
+  width: 28% !important;
+  transform: translateX(-32%) !important;
+  z-index: 10;
+}
+
+/* 3rd card frozen on direct hover */
+.gallery .gallery-card:nth-child(3):hover {
+  width: 40% !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+/* Scale & shadow */
+.gallery-card:hover {
+  transform: scale(1.04) !important;
+  z-index: 25;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+.gallery-card:nth-child(3):hover {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Dim non-hovered */
+.gallery:hover .gallery-card:not(:hover) {
+  opacity: 0.82;
+}
+.gallery:hover .gallery-card:nth-child(4):hover ~ .gallery-card:nth-child(3) {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .gallery { height: 340px; }
+}
+@media (max-width: 640px) {
+  .gallery { height: 240px; }
+  .gallery-card { width: 0% !important; }
+  .gallery-card:nth-child(2) { width: 100% !important; }
+  .gallery:hover .gallery-card:hover { width: 100% !important; }
+}
+/* Hide 3rd card overlay when ANY other card is hovered */
+.gallery:hover .gallery-card:not(:nth-child(3)):hover ~ .gallery-card:nth-child(3) .gallery-overlay {
+  opacity: 0 !important;
+  transform: translateY(40%) !important;
+  pointer-events: auto;
+}
+
+/* Also hide if hover occurs BEFORE the 3rd card */
+.gallery:hover .gallery-card:nth-child(1):hover ~ .gallery-card:nth-child(3) .gallery-overlay,
+.gallery:hover .gallery-card:nth-child(2):hover ~ .gallery-card:nth-child(3) .gallery-overlay {
+  opacity: 0 !important;
+  transform: translateY(40%) !important;
+  pointer-events: auto;
+}
+
+/* Hide 3rd overlay when 4th is hovered */
+.gallery:hover .gallery-card:nth-child(4):hover ~ * .gallery-overlay,
+.gallery:hover .gallery-card:nth-child(4):hover .gallery-card:nth-child(3) .gallery-overlay {
+  opacity: 0 !important;
+  transform: translateY(40%) !important;
+}
+.gallery:hover .gallery-card:nth-child(4):hover {
+  pointer-events: auto;
+}
+.gallery:hover .gallery-card:nth-child(4):hover ~ * {
+  pointer-events: auto;
+}
+.gallery:hover .gallery-card:nth-child(4):hover ~ .gallery-card:nth-child(1),
+.gallery:hover .gallery-card:nth-child(4):hover ~ .gallery-card:nth-child(2),
+.gallery:hover .gallery-card:nth-child(4):hover {
+  --four-active: 1;
+}
+
+
+/* Hide ALL overlays when gallery is hovered */
+.gallery:hover .gallery-overlay {
+  opacity: 0 !important;
+  transform: translateY(40%) !important;
+}
+
+/* BUT allow overlay on hovered card */
+.gallery-card:hover .gallery-overlay {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* Mobile adjustments: same as About section behavior */
+@media (max-width: 768px) {
+  .connectivities-section {
+    padding: 60px 15px 30px;
+  }
+
+  /* Container: stack vertically */
+  .connectivities-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px; /* same as about-container */
+    margin: 0 auto;
+  }
+
+  /* Right content first */
+  .right-content {
+    order: 0;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .connectivities-main-heading {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .intro {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .stat-number {
+    font-size: 24px;
+  }
+
+  .stat-text {
+    font-size: 13px;
+  }
+
+  .white-cta {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  /* Left row stacked vertically */
+  .left-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    order: 1;
+    align-items: center; /* center cards */
+  }
+
+  .tall-card {
+    width: 100%;
+    max-width: 340px;
+    height: 300px;
+  }
+
+  .card-overlay {
+    height: 50%;
+    padding-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .outline-btn {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  /* Gallery wrapper last */
+  .gallery-wrapper {
+    order: 2;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px; /* same container width as about-section */
+  }
+
+  .gallery {
+    height: 220px;
+    flex-wrap: nowrap;
+  }
+
+  /* Make gallery cards full width but scrollable horizontally */
+  .gallery-card {
+    width: 80%; 
+    flex-shrink: 0;
+  }
+
+  .gallery-card:nth-child(1),
+  .gallery-card:nth-child(2),
+  .gallery-card:nth-child(3),
+  .gallery-card:nth-child(4) {
+    width: 80% !important;
+  }
+
+  .gallery-overlay .card-title {
+    font-size: 14px;
+  }
+
+  .gallery-overlay .outline-btn {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+
+  /* Reduce shadow & scale on mobile */
+  .gallery-card:hover {
+    transform: none !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+}
+/* ============================================= */
+/* MOBILE – ONE CARD AT A TIME + HORIZONTAL SCROLL */
+/* ============================================= */
+@media (max-width: 768px) {
+  .connectivities-section {
+    padding: 60px 15px 30px;
+  }
+
+  /* Stack main content vertically (same as before) */
+  .connectivities-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .right-content {
+    order: 0;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+
+  .connectivities-main-heading { font-size: 28px; }
+  .stat-number { font-size: 24px; }
+  .white-cta { font-size: 12px; padding: 10px 16px; }
+
+  .left-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    order: 1;
+    align-items: center;
+  }
+
+  .tall-card {
+    width: 100%;
+    max-width: 340px;
+    height: 300px;
+  }
+
+  /* ========= GALLERY – MOBILE ONE-BY-ONE SCROLL ========= */
+  .gallery-wrapper {
+    order: 2;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden; /* contain the scroll */
+  }
+
+  .gallery {
+    height: 260px;               /* you can adjust height */
+    display: flex;
+    overflow-x: auto;            /* horizontal scroll */
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;   /* nice snap effect */
+    -webkit-overflow-scrolling: touch; /* smooth on iOS */
+    gap: 16px;                   /* space between cards */
+    padding: 0 20px 20px;        /* padding so first/last card isn't stuck */
+    scrollbar-width: none;       /* hide scrollbar Firefox */
+  }
+
+  .gallery::-webkit-scrollbar {
+    display: none;               /* hide scrollbar Chrome/Safari */
+  }
+
+  .gallery-card {
+    flex: 0 0 82%;               /* ~one card visible (82% gives nice margin) */
+    width: 82%;
+    min-width: 82%;
+    height: 100%;
+    scroll-snap-align: center;   /* each card snaps to center */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+    transition: transform 0.3s ease;
+  }
+
+  /* Optional: slight zoom on the active (center) card */
+  .gallery-card:hover,
+  .gallery-card:active {
+    transform: scale(1.02);
+  }
+
+  /* Overlay styling for mobile */
+  .gallery-overlay .card-title {
+    font-size: 16px;
+  }
+  .gallery-overlay .outline-btn {
+    font-size: 13px;
+    padding: 9px 20px;
+  }
+
+  /* Remove all desktop hover width changes on mobile */
+  .gallery:hover .gallery-card,
+  .gallery-card:hover {
+    width: auto !important;
+    transform: none !important;
+  }
+}
+/* ============================================= */
+/* MOBILE — ONE CARD AT A TIME + TOP-RIGHT ARROWS */
+/* ============================================= */
+@media (max-width: 768px) {
+
+  /* gallery wrapper */
+  .gallery-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  /* top-right arrow buttons */
+  .gallery-nav.mobile-nav {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+  }
+
+  .gallery-nav .nav-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+  }
+
+  /* horizontal scroll area */
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 18px;
+    padding: 10px 22px;
+    height: 280px;
+    scrollbar-width: none;
+  }
+
+  .gallery::-webkit-scrollbar { display: none; }
+
+  /* one card visible at a time */
+  .gallery-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  /* remove desktop hover effects */
+  .gallery-card:hover {
+    transform: none !important;
+  }
+
+  /* better mobile overlay size */
+  .gallery-overlay {
+    height: 45%;
+  }
+
+  .gallery-overlay .card-title {
+    font-size: 16px;
+  }
+}
+.gallery-nav.mobile-nav {
+  display: none;
+}
+/* MOBILE GALLERY ARROWS */
+@media (max-width: 768px) {
+
+  .gallery-wrapper {
+    position: relative;
+  }
+
+  .gallery-nav.mobile-nav {
+    position: absolute;
+    top: -14px;
+    right: 12px;
+    display: flex !important;
+    gap: 10px;
+    z-index: 30;
+  }
+
+  .gallery-nav .nav-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #f15928;      /* orange bg */
+    color: #fff;               /* white arrow */
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    transition: 0.2s ease;
+  }
+
+  .gallery-nav .nav-btn:active {
+    transform: scale(0.92);
+  }
+}
+/* MOBILE — ONE CARD AT A TIME + TOP-RIGHT ARROWS */
+@media (max-width: 768px) {
+
+  /* gallery wrapper */
+  .gallery-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 60px;         /* pushes gallery down */
+    overflow: hidden;
+  }
+
+  /* top-right arrow buttons */
+  .gallery-nav.mobile-nav {
+    position: absolute;
+    top: -70px;               /* MORE GAP ABOVE GALLERY */
+    right: 10px;
+    display: flex;
+    gap: 14px;                /* spacing between arrows */
+    z-index: 20;
+  }
+
+  .gallery-nav .nav-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #f15928;     /* orange background */
+    color: #fff;             /* white icons */
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  /* horizontal scroll area */
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 18px;
+    padding: 10px 20px;
+    height: 280px;
+  }
+}
+
+.outline-btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.stat-number {
+  margin: 0;
+}
+
+.stat-text {
+  margin: 0;
+}
+
+
+
+
+

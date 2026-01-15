@@ -1,0 +1,445 @@
+/* Banner */
+.enquiry-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.enquiry-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.enquiry-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.enquiry-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.enquiry-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+/* Layout Wrapper */
+.enquiry-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left Text */
+.enquiry-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+.enquiry-small-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f15928;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom:0; 
+}
+
+.enquiry-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0;
+  margin-top:3px; 
+  color: #111;
+}
+
+.enquiry-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* Form Box */
+.enquiry-form-box {
+  flex: 1;
+  min-width: 400px;
+  background: #f9f9f9;   /* ⭐ Required */
+  padding: 30px 40px;
+  border-radius: 4px;
+}
+
+.enquiry-form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;  /* add vertical spacing */
+  display: inline-block; /* ensures margin-bottom works */
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+  box-sizing: border-box;  
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: none;
+}
+.form-group input, .form-group textarea:focus{
+    outline: none; 
+}
+
+.enquiry-btn {
+  background-color: #f15928;
+  color: white;
+  padding: 10px 13px;      /* horizontal padding controls width */
+  border: none;
+  border-radius: 4px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  width: auto;              /* make width based on content */
+  align-self: flex-start;   /* aligns button to left, can use center if needed */
+}
+.enquiry-btn:hover {
+  background-color: #000; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .enquiry-wrapper {
+    flex-direction: column;
+  }
+
+  .enquiry-title {
+    font-size: 26px;
+  }
+
+  .enquiry-form-box {
+    padding: 25px;
+  }
+}
+.enquiry-image {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 4px; 
+  display: block;
+}
+.required-star {
+  color: #e57373; 
+  margin-left: 2px; /* small spacing */
+}
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  width: 100%;
+  padding: 12px;
+  padding-right: 35px; /* space for arrow */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #fff;
+  appearance: none; /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.select-wrapper select:focus {
+  outline: none;
+}
+
+/* Custom arrow */
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  color: #555;
+  pointer-events: none; /* allows clicks on select */
+}
+@media (max-width: 1024px) {
+  .enquiry-banner {
+    padding: 90px 20px;
+  }
+
+  .enquiry-heading {
+    font-size: 42px;
+  }
+
+  .enquiry-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .enquiry-home-icon {
+    font-size: 18px;
+  }
+
+  .enquiry-content {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 768px) {
+  .enquiry-banner {
+    padding: 70px 15px;
+  }
+
+  .enquiry-container {
+    text-align: center;
+  }
+
+  .enquiry-heading {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .enquiry-breadcrumb {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .enquiry-home-icon {
+    font-size: 16px;
+  }
+
+  .enquiry-content {
+    padding: 40px 15px;
+  }
+}
+@media (max-width: 480px) {
+  .enquiry-heading {
+    font-size: 26px;
+  }
+
+  .enquiry-breadcrumb {
+    font-size: 13px;
+  }
+
+  .enquiry-home-icon {
+    font-size: 15px;
+  }
+
+  .enquiry-content {
+    padding: 30px 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .enquiry-wrapper {
+    gap: 30px;
+  }
+
+  .enquiry-title {
+    font-size: 28px;
+  }
+
+  .enquiry-para {
+    font-size: 15px;
+  }
+
+  .enquiry-image {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .enquiry-wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .enquiry-left {
+    width: 100%;
+    text-align: left;
+  }
+
+  .enquiry-small-heading {
+    font-size: 14px;
+  }
+
+  .enquiry-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .enquiry-para {
+    font-size: 14px;
+  }
+
+  .enquiry-image {
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0 auto;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .enquiry-small-heading {
+    font-size: 13px;
+  }
+
+  .enquiry-title {
+    font-size: 21px;
+  }
+
+  .enquiry-para {
+    font-size: 13.5px;
+  }
+
+  .enquiry-image {
+    max-width: 280px;
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .enquiry-form-box {
+    min-width: 100%;
+    padding: 25px 30px;
+  }
+
+  .enquiry-form-box form {
+    gap: 16px;
+  }
+
+  .enquiry-btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .enquiry-form-box {
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-group textarea {
+    height: 100px;
+  }
+
+  .enquiry-btn {
+    width: 100%;
+    align-self: stretch;   /* full-width button */
+    text-align: center;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .enquiry-form-box {
+    padding: 15px;
+  }
+
+  .form-group label {
+    font-size: 12.5px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .form-group textarea {
+    height: 90px;
+  }
+
+  .enquiry-btn {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .enquiry-form-box {
+    width: 100%;
+    max-width: 420px;     /* keeps it visually centered */
+    min-width: unset;    /* 🔑 remove desktop min-width */
+    margin: 0 auto;      /* 🔑 center horizontally */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+  .enquiry-banner {
+    padding: 50px 15px 40px; /* reduce top space */
+  }
+
+  .enquiry-content {
+    padding-top: 50px !important; /* reduce gap after banner */
+  }
+}
+@media (max-width: 480px) {
+  .enquiry-banner {
+    padding: 40px 12px 30px; /* even tighter */
+  }
+
+  .enquiry-content {
+    padding-top: 40px !important;
+  }
+}
+@media (max-width: 768px) {
+  .enquiry-banner,
+  .enquiry-content {
+    margin-top: 0;
+  }
+}
+/* Force placeholder color and remove blue tint in iOS */
+.select-wrapper select {
+  color: #555;          /* normal text color */
+}
+
+/* Target the placeholder (first empty option) */
+.select-wrapper select option[value=""] {
+  color: #999;          /* lighter gray for placeholder */
+}
+.select-wrapper select:valid {
+  color: #555; /* ensures selected value text is dark */
+}
+.enquiry-breadcrumb-link {
+  color: #f15928;        /* matches the home icon */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}

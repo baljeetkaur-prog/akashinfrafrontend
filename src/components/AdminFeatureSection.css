@@ -1,0 +1,184 @@
+/* ================================
+   ADMIN FEATURE SECTION
+================================ */
+
+/* BODY / CONTAINER */
+.admin-feature-section {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* PAGE TITLE */
+.admin-feature-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.admin-feature-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* LABELS */
+.admin-feature-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* INPUTS, SELECTS, TEXTAREA */
+.admin-feature-section input[type="text"],
+.admin-feature-section input[type="number"],
+.admin-feature-section select,
+.admin-feature-section textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.admin-feature-section input:focus,
+.admin-feature-section select:focus,
+.admin-feature-section textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* ================================
+   SIMPLE EDITOR (IMPORTANT PART)
+================================ */
+
+/* Paragraph / Rich text editor */
+.admin-feature-section .simple-editor,
+.admin-feature-section [contenteditable="true"] {
+  width: 100%;
+  min-height: 80px;
+  padding: 8px 10px;
+  border: 1px solid #ddd;   /* ✅ BORDER KEPT */
+  border-radius: 3px;
+  font-size: 14px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+/* Focus state */
+.admin-feature-section .simple-editor:focus,
+.admin-feature-section [contenteditable="true"]:focus {
+  border-color: #0073aa;
+  outline: none;
+  box-shadow: none;
+}
+
+/* If editor uses iframe */
+.admin-feature-section iframe {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.admin-feature-section iframe:focus {
+  outline: none;
+}
+
+/* ================================
+   GRID ITEM SECTIONS
+================================ */
+
+/* Each grid item (no card / no box look) */
+.admin-feature-section > div > div {
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.admin-feature-section button {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.admin-feature-section button:hover {
+  background: #005f87;
+}
+
+/* REMOVE ITEM BUTTON */
+.admin-feature-section button.remove-item,
+.admin-feature-section button[onclick*="remove"] {
+  background: #dc3232;
+}
+
+.admin-feature-section button.remove-item:hover {
+  background: #b52a3a;
+}
+
+/* SAVE BUTTON */
+/* SAVE BUTTON ONLY (BOTTOM OF PAGE) */
+.admin-feature-section > button:last-of-type {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.admin-feature-section button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .admin-feature-section {
+    padding: 15px 15px;
+  }
+
+  .admin-feature-section h1 {
+    font-size: 26px;
+  }
+}
+
+/* ================================
+   FOCUS CLEANUP (NO BORDER REMOVAL)
+================================ */
+
+.admin-feature-section div:focus-visible {
+  outline: none;
+}
+/* FIX GRID ITEM BUTTON SIZE & ALIGNMENT */
+.admin-feature-section > div > div button {
+  padding: 6px 12px;
+  font-size: 13px;
+  margin-top: 10px;
+  width: auto;
+  display: inline-block;
+}

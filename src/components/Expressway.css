@@ -1,0 +1,849 @@
+/* ================================
+   BANNER
+=================================== */
+.expressway-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.expressway-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.expressway-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.expressway-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.expressway-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+/* ================================
+   EXPRESSWAY BANNER – MEDIA QUERIES
+=================================== */
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .expressway-banner {
+    padding: 100px 20px;
+  }
+
+  .expressway-heading {
+    font-size: 42px;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 16px;
+  }
+
+  .expressway-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .expressway-banner {
+    padding: 80px 16px;
+  }
+
+  .expressway-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .expressway-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .expressway-banner {
+    padding: 70px 12px;
+  }
+
+  .expressway-heading {
+    font-size: 28px;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .expressway-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .expressway-banner {
+    padding: 60px 10px;
+  }
+
+  .expressway-heading {
+    font-size: 24px;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 13px;
+  }
+
+  .expressway-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* Optional: override for very small screens to keep breadcrumb in row */
+@media (max-width: 576px) {
+  .expressway-breadcrumb {
+    flex-direction: row;      /* allows wrapping if text is long */
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+}
+
+
+/* ================================
+   MAIN CONTENT CONTAINER
+=================================== */
+.expressway-content {
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+/* MAIN FLEX WRAPPER */
+.expressway-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Reverse layout for zig-zag */
+.expressway-content-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ================================
+   LEFT CONTENT
+=================================== */
+.expressway-left-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.expressway-big-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top:0; 
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.expressway-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0%;
+}
+
+/* ================================
+   RIGHT IMAGE
+=================================== */
+.expressway-right-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.expressway-right-image img {
+  max-width: 100%;
+  border-radius: 4px; 
+}
+
+/* ================================
+   SECTION TEXT
+=================================== */
+.expressway-section-text {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* ================================
+   TWO IMAGE HIGHLIGHTS
+=================================== */
+.expressway-two-images-section {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.expressway-two-images-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.expressway-image-card {
+  text-align: left;
+}
+
+.expressway-image-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.expressway-image-heading {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0;
+}
+
+.expressway-image-para {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.expressway-extra-content {
+  margin-top: 10px;
+}
+
+.expressway-extra-content p {
+  margin-bottom: 5px;
+  color: #555;
+  margin-top:0;
+  line-height: 1.7;
+}
+
+/* ================================
+   KEY HIGHLIGHTS LIST
+=================================== */
+.expressway-points-section {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+/* ================================
+   FAQ SECTION
+=================================== */
+.expressway-faq-section {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* FAQ item wrapper */
+.faq-item {
+  padding: 13px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header row (icon + text) */
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Question text */
+.faq-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+/* Icon style */
+.faq-icon {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* When open */
+.faq-item.open h3 {
+  color: #f15928;
+}
+
+.faq-item.open .faq-icon {
+  color: #f15928;
+  transform: rotate(180deg);
+}
+
+/* Answer */
+.faq-answer {
+  margin-top: 20px;
+  padding-left: 34px; /* aligns under question text */
+  margin-bottom: 5px; 
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+=================================== */
+@media (max-width: 992px) {
+  .expressway-two-images-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .expressway-big-heading {
+    font-size: 26px;
+  }
+
+  .expressway-para {
+    font-size: 14px;
+  }
+
+  /* For zig-zag, stack vertically on mobile */
+  .expressway-content-wrapper,
+  .expressway-content-wrapper.reverse {
+    flex-direction: column !important;
+  }
+
+  .expressway-right-image {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .expressway-big-heading {
+    font-size: 22px;
+  }
+
+  .expressway-para {
+    font-size: 13px;
+  }
+}
+/* ================================
+   Key Highlights with Check Marks
+=================================== */
+.expressway-points-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.expressway-points-section li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Cursive check mark */
+.expressway-points-section li::before {
+  content: "✓";
+  font-family: "cursive";
+  color: #f15928;
+  font-weight: 700;       /* make tick bolder */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+}
+/* ================================
+   EXPRESSWAY CONTENT – MEDIA QUERIES
+=================================== */
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .expressway-two-images-row {
+    grid-template-columns: 1fr;
+  }
+
+  .expressway-big-heading {
+    font-size: 28px;
+  }
+
+  .expressway-image-heading {
+    font-size: 18px;
+  }
+
+  .faq-header h3,
+  .faq-item h3 {
+    font-size: 18px;
+  }
+
+  .expressway-para,
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer {
+    font-size: 15px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  /* Stack zig-zag content vertically */
+  .expressway-content-wrapper,
+  .expressway-content-wrapper.reverse {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .expressway-right-image {
+    margin-bottom: 20px;
+  }
+
+  .expressway-big-heading {
+    font-size: 24px;
+  }
+
+  .expressway-para {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .expressway-right-image img {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .expressway-image-heading {
+    font-size: 18px;
+  }
+
+  .faq-header h3,
+  .faq-item h3 {
+    font-size: 18px;
+  }
+
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .expressway-big-heading {
+    font-size: 22px;
+  }
+
+  .expressway-para {
+    font-size: 13px;
+  }
+
+  .expressway-right-image img {
+    max-height: 220px;
+  }
+
+  .expressway-image-heading {
+    font-size: 16px;
+  }
+
+  .faq-header h3,
+  .faq-item h3 {
+    font-size: 16px;
+  }
+
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .expressway-big-heading {
+    font-size: 20px;
+  }
+
+  .expressway-para {
+    font-size: 12.5px;
+  }
+
+  .expressway-right-image img {
+    max-height: 180px;
+  }
+
+  .expressway-image-heading {
+    font-size: 15px;
+  }
+
+  .faq-header h3,
+  .faq-item h3 {
+    font-size: 15px;
+  }
+
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer {
+    font-size: 15px;
+  }
+}
+/* Tablets and below (≤768px) */
+@media (max-width: 768px) {
+  /* RIGHT IMAGE */
+  .expressway-right-image {
+    flex: 1 1 100%;       /* allow it to take full width */
+    min-width: 0;         /* override min-width */
+    margin-bottom: 20px;  /* spacing below */
+  }
+
+  .expressway-right-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* TWO IMAGE HIGHLIGHTS */
+  .expressway-two-images-row {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 20px;
+  }
+
+  .expressway-image-card {
+    width: 100%;      /* full width of grid column */
+  }
+
+  .expressway-image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media (max-width: 768px) {
+  .expressway-content-wrapper,
+  .expressway-two-images-row {
+    max-width: 100%;
+    gap: 0;
+    padding: 0;
+  }
+
+  .expressway-right-image,
+  .expressway-image-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .expressway-right-image img,
+  .expressway-image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0; /* optional */
+  }
+}
+/* Reduce spacing between sections on tablets and mobile */
+@media (max-width: 768px) {
+  .expressway-content-wrapper,
+  .expressway-two-images-section,
+  .expressway-section-text,
+  .expressway-points-section,
+  .expressway-faq-section {
+    margin-top: 20px;   /* reduced from larger values */
+    margin-bottom: 20px; /* optional: reduce bottom spacing too */
+    padding-left: 10px;  /* optional: adjust side padding */
+    padding-right: 10px;
+  }
+
+  /* Extra tweak for image cards */
+  .expressway-image-card {
+    margin-bottom: 15px;
+  }
+}
+
+/* Extra small mobiles ≤400px */
+@media (max-width: 400px) {
+  .expressway-content-wrapper,
+  .expressway-two-images-section,
+  .expressway-section-text,
+  .expressway-points-section,
+  .expressway-faq-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .expressway-image-card {
+    margin-bottom: 12px;
+  }
+}
+/* ---------- Large Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .expressway-banner {
+    padding: 100px 20px;
+  }
+
+  .expressway-heading {
+    font-size: 42px;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .expressway-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* ---------- Tablets (≤768px) ---------- */
+@media (max-width: 768px) {
+  .expressway-banner {
+    padding: 80px 16px;
+  }
+
+  .expressway-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .expressway-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Mobile (≤576px) ---------- */
+@media (max-width: 576px) {
+  .expressway-banner {
+    padding: 70px 12px;
+  }
+
+  .expressway-heading {
+    font-size: 28px;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+    flex-direction: row; /* allow wrapping */
+    flex-wrap: wrap;
+  }
+
+  .expressway-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Small Mobile (≤400px) ---------- */
+@media (max-width: 400px) {
+  .expressway-banner {
+    padding: 60px 10px;
+  }
+
+  .expressway-heading {
+    font-size: 24px;
+  }
+
+  .expressway-breadcrumb {
+    font-size: 13px;
+  }
+
+  .expressway-home-icon {
+    font-size: 16px;
+  }
+}
+/* Tablets and below (≤768px) */
+@media (max-width: 768px) {
+  .expressway-big-heading { font-size: 26px; line-height: 1.3; }
+  .expressway-para { font-size: 14px; line-height: 1.5; }
+  .expressway-image-heading { font-size: 24px; }
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer { font-size: 14px; }
+
+  /* Stack zig-zag content vertically */
+  .expressway-content-wrapper,
+  .expressway-content-wrapper.reverse {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+
+  .expressway-right-image {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 20px;
+  }
+
+  .expressway-right-image img,
+  .expressway-image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  .expressway-two-images-row {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 20px;
+  }
+
+  .expressway-image-card { width: 100%; margin-bottom: 15px; }
+
+  /* Reduce spacing */
+  .expressway-content-wrapper,
+  .expressway-two-images-section,
+  .expressway-section-text,
+  .expressway-points-section,
+  .expressway-faq-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .expressway-big-heading { font-size: 22px; }
+  .expressway-para { font-size: 14px; }
+  .expressway-image-heading { font-size: 16px; }
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer { font-size: 14px; }
+
+  .expressway-right-image img { max-height: 220px; }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .expressway-big-heading { font-size: 20px; }
+  .expressway-para { font-size: 14px; }
+  .expressway-image-heading { font-size: 15px; }
+  .expressway-image-para,
+  .expressway-extra-content p,
+  .expressway-points-section li,
+  .faq-answer { font-size: 14px; }
+
+  .expressway-right-image img { max-height: 180px; }
+}
+/* ==============================
+   Reduce Top Spacing Between Sections on Mobile
+============================== */
+
+/* Tablets and below (≤768px) */
+@media (max-width: 768px) {
+  .expressway-content-wrapper,
+  .expressway-two-images-section,
+  .expressway-section-text,
+  .expressway-points-section,
+  .expressway-faq-section {
+    margin-top: 10px;   /* reduce top spacing */
+    margin-bottom: 15px; /* optional: reduce bottom spacing */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .expressway-image-card {
+    margin-bottom: 10px;
+  }
+
+  .expressway-right-image {
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .expressway-content-wrapper,
+  .expressway-two-images-section,
+  .expressway-section-text,
+  .expressway-points-section,
+  .expressway-faq-section {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .expressway-image-card {
+    margin-bottom: 8px;
+  }
+
+  .expressway-right-image {
+    margin-bottom: 12px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .expressway-content-wrapper,
+  .expressway-two-images-section,
+  .expressway-section-text,
+  .expressway-points-section,
+  .expressway-faq-section {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .expressway-image-card {
+    margin-bottom: 6px;
+  }
+
+  .expressway-right-image {
+    margin-bottom: 8px;
+  }
+}
+
+.expressway-breadcrumb-link {
+  color: #f15928;        /* match the home icon color */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+
+

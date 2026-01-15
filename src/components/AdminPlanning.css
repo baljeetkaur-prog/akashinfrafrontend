@@ -1,0 +1,216 @@
+/* adminplanning.css */
+
+/* BODY / CONTAINER */
+.admin-planning {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.admin-planning h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.admin-planning h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+  margin-top: 10px;
+}
+
+/* LABELS */
+.admin-planning label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #555;
+}
+
+/* INPUTS & SELECTS */
+.admin-planning input[type="text"],
+.admin-planning input[type="number"],
+.admin-planning select,
+.admin-planning textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.admin-planning input:focus,
+.admin-planning select:focus,
+.admin-planning textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.admin-planning input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE PREVIEW */
+.admin-planning .image-preview {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.admin-planning .image-preview img {
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+/* ALT INPUT */
+.admin-planning .image-preview input[type="text"] {
+  width: 100%;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+
+/* IMAGE BUTTONS */
+.admin-planning .image-preview button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px 2px 0 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.admin-planning .image-preview button.replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.admin-planning .image-preview button.replace:hover {
+  background: #005f87;
+}
+
+.admin-planning .image-preview button.delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+.admin-planning .image-preview button.delete:hover {
+  background: #b52a3a;
+}
+
+/* FEATURE CARDS / STATS */
+.admin-planning .feature-card,
+.admin-planning .bottom-stat {
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* FEATURE CARD INPUTS */
+.admin-planning .feature-card input,
+.admin-planning .feature-card select {
+  width: 60%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* ADD BUTTON */
+.admin-planning button.add-item {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.admin-planning button.add-item:hover {
+  background: #005f87;
+}
+
+/* SAVE BUTTON */
+.admin-planning button.save-all {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.admin-planning button.save-all:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.admin-planning button.save-all:hover:enabled {
+  background: #005f87;
+}
+
+/* IMAGE FLEX */
+.admin-planning .image-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-planning {
+    padding: 15px 20px;
+  }
+
+  .admin-planning .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .admin-planning .feature-card input,
+  .admin-planning .feature-card select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* ===== SIMPLE EDITOR FOCUS FIX ===== */
+.admin-planning [contenteditable]:focus,
+.admin-planning iframe:focus,
+.admin-planning .editor,
+.admin-planning .simple-editor,
+.admin-planning .editor-container,
+.admin-planning div:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,90 @@
+.back-to-top {
+  position: fixed;
+  bottom: 160px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg); /* rotate text to vertical */
+  transform-origin: right bottom;
+
+  /* Solid white background */
+  background: transparent; /* fully white */
+  border-radius: 8px; /* rounded corners */
+  padding: 6px 10px; /* spacing around text */
+}
+
+.vertical-text {
+  font-weight: 700;
+  font-size: 18px;
+  color: #f15928; /* keep orange text visible */
+  display: inline-flex;
+  align-items: center; /* vertically center arrow with text */
+}
+
+.vertical-text .arrow-icon {
+  color: #f15928;
+  margin-left: 8px; /* space between text and arrow */
+  font-size: 20px;
+  transform: rotate(90deg); /* counter-rotation */
+  position: relative;
+  top: 1px; /* nudge arrow slightly */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .back-to-top {
+    bottom: 160px;
+    right: 15px;
+    padding: 5px 10px;
+  }
+
+  .vertical-text {
+    font-size: 16px;
+  }
+
+  .vertical-text .arrow-icon {
+    font-size: 18px;
+    margin-left: 6px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 130px;
+    right: 10px;
+    padding: 4px 8px;
+  }
+
+  .vertical-text {
+    font-size: 14px;
+  }
+
+  .vertical-text .arrow-icon {
+    font-size: 16px;
+    margin-left: 4px;
+    top: 0;
+  }
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 120px;
+    right: 5px;
+    padding: 3px 6px;
+  }
+
+  .vertical-text {
+    font-size: 12px;
+  }
+
+  .vertical-text .arrow-icon {
+    font-size: 14px;
+    margin-left: 3px;
+  }
+}
+

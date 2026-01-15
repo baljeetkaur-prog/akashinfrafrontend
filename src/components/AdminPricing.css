@@ -1,0 +1,170 @@
+/* ================================
+   ADMIN PRICING PAGE STYLES
+================================ */
+
+/* ROOT */
+.pricing-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.pricing-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.pricing-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* LABELS */
+.pricing-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* INPUTS / SELECTS */
+.pricing-admin input[type="text"],
+.pricing-admin input[type="number"],
+.pricing-admin select,
+.pricing-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.pricing-admin input:focus,
+.pricing-admin select:focus,
+.pricing-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.pricing-admin input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE PREVIEW */
+.pricing-admin .image-preview {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pricing-admin .image-preview img {
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* IMAGE BUTTONS */
+.pricing-admin .image-preview button {
+  font-size: 12px;
+  padding: 6px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pricing-admin .image-preview .replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.pricing-admin .image-preview .replace:hover {
+  background: #005f87;
+}
+
+.pricing-admin .image-preview .delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+.pricing-admin .image-preview .delete:hover {
+  background: #b52a3a;
+}
+
+/* PRICING CARD BLOCK */
+.pricing-admin .pricing-card {
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+/* ADD BUTTON */
+.pricing-admin .add-btn {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.pricing-admin .add-btn:hover {
+  background: #005f87;
+}
+
+/* SAVE BUTTON */
+.pricing-admin .save-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pricing-admin .save-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* SIMPLE EDITOR FOCUS FIX */
+.pricing-admin [contenteditable]:focus,
+.pricing-admin iframe:focus,
+.pricing-admin .simple-editor:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .pricing-admin {
+    padding: 15px;
+  }
+
+  .pricing-admin .image-preview img {
+    max-width: 100%;
+  }
+}

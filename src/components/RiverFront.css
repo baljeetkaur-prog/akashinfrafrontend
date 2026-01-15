@@ -1,0 +1,379 @@
+/* ================================
+   BANNER
+================================= */
+.riverfront-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.riverfront-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.riverfront-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.riverfront-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.riverfront-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+
+/* =====================================
+   RIVERFRONT BANNER – MEDIA QUERIES
+===================================== */
+
+/* ---------- Large Tablets (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .riverfront-banner {
+    padding: 100px 20px;
+  }
+
+  .riverfront-heading {
+    font-size: 42px;
+  }
+
+  .riverfront-breadcrumb {
+    font-size: 16px;
+  }
+
+  .riverfront-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* ---------- Tablets (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .riverfront-banner {
+    padding: 80px 16px;
+  }
+
+  .riverfront-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .riverfront-breadcrumb {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .riverfront-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Mobile (≤ 576px) ---------- */
+@media (max-width: 576px) {
+  .riverfront-banner {
+    padding: 70px 12px;
+  }
+
+  .riverfront-heading {
+    font-size: 28px;
+  }
+
+  .riverfront-breadcrumb {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .riverfront-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media (max-width: 400px) {
+  .riverfront-banner {
+    padding: 60px 10px;
+  }
+
+  .riverfront-heading {
+    font-size: 24px;
+  }
+
+  .riverfront-breadcrumb {
+    font-size: 13px;
+  }
+
+  .riverfront-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Reset breadcrumb to row for long text ---------- */
+@media (max-width: 576px) {
+  .riverfront-breadcrumb {
+    flex-direction: row;  /* keeps breadcrumb horizontal if text is short */
+    flex-wrap: wrap;      /* allows wrapping if text is long */
+    gap: 6px;
+  }
+}
+
+/* ==============================
+   MAIN CONTENT
+================================= */
+.riverfront-content {
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   FLEX CONTENT WRAPPER
+================================= */
+.riverfront-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 70px auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Zig-zag reverse */
+.riverfront-content-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ==============================
+   TEXT CONTENT
+================================= */
+.riverfront-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.riverfront-subheading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.riverfront-para {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin: 0;
+}
+
+/* ==============================
+   IMAGE CONTENT
+================================= */
+.riverfront-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.riverfront-image img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* ==============================
+   SECTION TEXT
+================================= */
+.riverfront-section-text {
+  max-width: 1200px;
+  margin: 0 auto 30px auto;
+}
+
+/* ==============================
+   POINTS LIST
+================================= */
+.riverfront-points {
+  max-width: 1200px;
+  margin: 0 auto 70px auto;
+}
+
+.riverfront-points ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.riverfront-points li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* Check mark */
+.riverfront-points li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f15928;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ==============================
+   FAQ SECTION
+================================= */
+.riverfront-faq {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.riverfront-faq-item {
+  padding: 14px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.riverfront-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.riverfront-faq-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.riverfront-faq-icon {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Open state */
+.riverfront-faq-item.open h3 {
+  color: #f15928;
+}
+
+.riverfront-faq-item.open .riverfront-faq-icon {
+  color: #f15928;
+  transform: rotate(180deg);
+}
+
+.riverfront-faq-answer {
+  margin-top: 18px;
+  padding-left: 34px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 992px) {
+  .riverfront-content-wrapper {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .riverfront-heading {
+    font-size: 38px;
+  }
+
+  .riverfront-subheading {
+    font-size: 26px;
+  }
+
+  .riverfront-para {
+    font-size: 14px;
+  }
+
+  .riverfront-content-wrapper,
+  .riverfront-content-wrapper.reverse {
+    flex-direction: column !important;
+  }
+
+  .riverfront-image {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .riverfront-heading {
+    font-size: 28px;
+  }
+
+  .riverfront-subheading {
+    font-size: 22px;
+  }
+
+  .riverfront-para {
+    font-size: 13px;
+  }
+}
+/* ==============================
+   MOBILE - REDUCE TOP SPACING
+================================= */
+@media (max-width: 768px) {
+  .riverfront-content {
+    padding-top: 30px; /* reduce from 60px */
+    padding-bottom: 30px; /* optional, reduce bottom too */
+  }
+
+  .riverfront-section-text {
+    margin-top: 15px; /* reduce from 30px */
+    margin-bottom: 15px;
+  }
+
+  .riverfront-points {
+    margin-top: 30px; /* reduce from 70px */
+    margin-bottom: 30px;
+  }
+
+  .riverfront-faq {
+    margin-top: 20px; /* reduce spacing above FAQ */
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .riverfront-content-wrapper {
+    margin-bottom: 20px; /* reduce from 70px default of .riverfront-content-wrapper */
+  }
+
+  .riverfront-section-text {
+    margin-top: 15px;
+  }
+
+  .riverfront-points {
+    margin-top: 20px;
+  }
+}
+.riverfront-breadcrumb-link {
+  color: #f15928;        /* match the icon color or preferred color */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+

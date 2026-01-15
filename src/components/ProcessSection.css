@@ -1,0 +1,216 @@
+.processsec-wrapper {
+  position: relative;
+  padding: 80px 20px;
+  background-color: #111;
+  color: white;
+}
+
+.processsec-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.processsec-container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.processsec-heading {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.processsec-subtext {
+  width: 70%;
+  margin: 0 auto 350px;
+  font-size: 17px;
+  color: #ddd;
+}
+
+/* GRID (Custom layout) */
+.processsec-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  gap: 40px;
+}
+
+/* Layout Positions */
+.item-1 {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.item-4 {
+  grid-column: 3 / 4;
+  grid-row: 1;
+}
+
+.item-2 {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+
+.item-3 {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+/* Image styling */
+.process-img {
+  width: 160px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* Text under images */
+.process-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px; 
+}
+
+.process-para {
+  font-size: 14px;
+  color: #ccc;
+  width: 50%;
+  margin: auto;
+
+  line-height: 1.45;              /* smoother readability */
+  text-align: justify;            /* justified edges */
+  text-justify: inter-word;       /* reduces big spacing between words */
+  hyphens: auto;                  /* prevents ugly long gaps */
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .processsec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .processsec-subtext {
+    width: 90%;
+  }
+}
+/* Move item 1 slightly left + top */
+.item-1 {
+  margin-left: -100px;
+  margin-top: -300px;
+}
+
+/* Move item 4 slightly right + top */
+.item-4 {
+  margin-right: -100px;
+  margin-top: -300px;
+}
+
+/* Move item 2 slightly upward + perfectly centered */
+.item-2 {
+  margin-top: -230px;
+  transform: translateX(-150px); /* tiny center alignment */
+}
+
+/* Move item 3 slightly upward + perfectly centered */
+.item-3 {
+  margin-top: -230px;
+  transform: translateX(-230px); /* tiny center alignment */
+}
+
+.process-img-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 15px;
+}
+
+.process-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);  
+  border-radius: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 60px;
+  font-weight: 800;
+
+  color: transparent;              /* remove fill */
+  -webkit-text-stroke: 2px white;  /* stroke only */
+  text-stroke: 2px white;          /* for non-webkit browsers */
+}
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Container padding */
+  .processsec-wrapper {
+    padding: 50px 20px;
+  }
+
+  .processsec-heading {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .processsec-subtext {
+    width: 95%;
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  /* Remove center background image */
+  .processsec-container > div[style*="processimg.png"] {
+    display: none !important;
+  }
+
+  /* Grid: single column layout */
+  .processsec-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+  }
+
+  /* Reset custom margins/transforms for items */
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4 {
+    margin: 0;
+    transform: none;
+  }
+
+  /* Images */
+  .process-img {
+    width: 250px;
+    height: 200px;
+  }
+
+  /* Image overlay number */
+  .process-img-overlay {
+    font-size: 80px;
+  }
+
+  /* Titles and paragraphs */
+  .process-title {
+    font-size: 25px;
+  }
+
+  .process-para {
+    width: 90%;
+    font-size: 15px;
+  }
+}
+

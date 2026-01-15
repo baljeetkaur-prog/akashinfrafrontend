@@ -1,0 +1,116 @@
+/* socialIconsAdmin.css */
+
+/* BODY / CONTAINER */
+.social-icons-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.social-icons-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.social-icons-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* LABELS */
+.social-icons-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #555;
+}
+
+/* INPUTS & SELECTS */
+.social-icons-admin input[type="text"],
+.social-icons-admin input[type="number"],
+.social-icons-admin select,
+.social-icons-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.social-icons-admin input:focus,
+.social-icons-admin select:focus,
+.social-icons-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* SAVE BUTTON */
+.social-icons-admin button.save-social {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.social-icons-admin button.save-social:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.social-icons-admin button.save-social:hover:enabled {
+  background: #005f87;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .social-icons-admin {
+    padding: 15px 20px;
+  }
+}
+
+/* ===== FOCUS FIX ===== */
+.social-icons-admin [contenteditable]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.social-icons-admin iframe:focus {
+  outline: none !important;
+}
+
+.social-icons-admin .editor,
+.social-icons-admin .simple-editor,
+.social-icons-admin .editor-container {
+  outline: none;
+}
+
+.social-icons-admin .editor:focus,
+.social-icons-admin .simple-editor:focus,
+.social-icons-admin .editor-container:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.social-icons-admin div:focus-visible {
+  outline: none;
+}

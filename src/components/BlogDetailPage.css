@@ -1,0 +1,500 @@
+/* =============================
+   BLOG DETAIL – BANNER
+============================= */
+.blogdetail-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #111;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.blogdetail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blogdetail-heading {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.blogdetail-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.blogdetail-breadcrumb a {
+  color: #f15928;
+  text-decoration: none;
+}
+
+.blogdetail-breadcrumb span {
+  color: #fff;
+}
+
+/* =============================
+   BLOG DETAIL – LAYOUT
+============================= */
+
+/* Wrapper comes from BlogsMain.css */
+.blogsmain-content-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; /* 🔥 KEY FIX */
+}
+
+/* MAIN CONTENT */
+.blogdetail-main {
+  flex: 1;                     /* takes remaining space */
+  background: #ffffff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* SIDEBAR (FIXED WIDTH) */
+.blogdetail-sidebar {
+  flex: 0 0 300px;             /* 👈 PERFECT WIDTH */
+  max-width: 360px;
+}
+
+/* =============================
+   BLOG DETAIL – CONTENT
+============================= */
+.blog-detail-title {
+  margin-top: 0;
+}
+
+.blogdetail-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.blogdetail-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.blogdetail-author img {
+  width: 22px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.blogdetail-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* =============================
+   SIDEBAR CONTENT
+============================= */
+.blogdetail-sidebar-box {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.blogdetail-recent-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.blogdetail-recent-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+}
+
+.blogdetail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.blogdetail-tags span {
+  background: #f15928;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 13px;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+@media (max-width: 768px) {
+  .blogsmain-content-wrapper {
+    flex-direction: column;
+  }
+
+  .blogdetail-sidebar {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+/* =============================
+   BLOG META ROW
+============================= */
+.blogdetail-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* LEFT META */
+.blogdetail-meta-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blogdetail-meta-left img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+/* RIGHT META */
+.blogdetail-meta-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.blogdetail-main {
+  flex: 1;
+  background: #ffffff;
+  padding: 0px;
+}
+
+.blogdetail-sidebar {
+  flex: 0 0 300px;
+  max-width: 360px;
+}
+/* =============================
+   BLOG DETAIL – TAGS
+============================= */
+/* Tags wrapper: allows wrapping multiple badges */
+.blogdetail-tags-wrapper {
+  display: flex;
+  flex-wrap: wrap;       /* wrap badges to new line if too many */
+  gap: 8px;              /* space between badges */
+  margin-top: 15px;
+}
+
+/* Each badge for a single tag */
+.blogdetail-tag-badge {
+  display: inline-block;       /* ensures individual badges */
+  background-color: #f0f0f0;  /* light grey background */
+  color: #000;                 /* black text */
+  padding: 5px 10px;           /* space inside badge */
+  border-radius: 4px;          /* rounded corners */
+  text-decoration: none;       /* remove underline */
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.blogdetail-tag-badge:hover {
+  background-color: #f15928;   /* gold on hover */
+  color: #fff !important;                 /* white text on hover */
+  cursor: pointer;
+}
+/* Headings */
+.bdp-big-heading-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.bdp-para-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+/* Lists */
+.bdp-list-text {
+  padding-left: 1.5rem; /* proper indentation */
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.bdp-list-text li {
+  margin-bottom: 0.5rem;
+  list-style-type: disc; /* default bullet */
+}
+
+/* Optional: for ordered lists */
+.bdp-list-text.ol {
+  list-style-type: decimal;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bdp-big-heading-text {
+    font-size: 24px;
+  }
+  .bdp-para-text {
+    font-size: 14px;
+  }
+  .bdp-list-text {
+    padding-left: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bdp-big-heading-text {
+    font-size: 22px;
+  }
+  .bdp-para-text {
+    font-size: 13px;
+  }
+  .bdp-list-text {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .bdp-big-heading-text {
+    font-size: 20px;
+  }
+  .bdp-para-text {
+    font-size: 12.5px;
+  }
+  .bdp-list-text {
+    padding-left: 0.9rem;
+  }
+}
+/* ==============================
+   BLOG DETAIL – MOBILE RESPONSIVE
+============================== */
+
+/* ---------- Large Tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .blogsmain-content-wrapper {
+    gap: 25px;
+  }
+
+  .blogsmain-heading {
+    font-size: 42px;
+  }
+
+  .blogsmain-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .blogsmain-home-icon {
+    font-size: 19px;
+  }
+
+  .blogdetail-image {
+    height: 300px;
+  }
+}
+
+/* ---------- Tablets (≤768px) ---------- */
+@media (max-width: 768px) {
+  .blogsmain-content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .blogsmain-banner {
+    padding: 80px 16px;
+  }
+
+  .blogsmain-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .blogsmain-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .blogsmain-home-icon {
+    font-size: 18px;
+  }
+
+  .blogdetail-sidebar {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .blogdetail-image {
+    height: auto;
+  }
+
+  .blog-detail-title {
+    font-size: 24px;
+  }
+
+  .bdp-big-heading-text {
+    font-size: 24px;
+  }
+
+  .bdp-para-text {
+    font-size: 14px;
+  }
+
+  .bdp-list-text {
+    padding-left: 1.2rem;
+  }
+
+  .blogdetail-tag-badge {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+/* ---------- Mobile (≤576px) ---------- */
+@media (max-width: 576px) {
+  .blogsmain-banner {
+    padding: 70px 12px;
+  }
+
+  .blogsmain-heading {
+    font-size: 28px;
+  }
+
+  .blogsmain-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .blogsmain-home-icon {
+    font-size: 17px;
+  }
+
+  .blog-detail-title {
+    font-size: 22px;
+  }
+
+  .bdp-big-heading-text {
+    font-size: 22px;
+  }
+
+  .bdp-para-text {
+    font-size: 13px;
+  }
+
+  .bdp-list-text {
+    padding-left: 1rem;
+  }
+
+  .blogdetail-tags-wrapper {
+    gap: 6px;
+  }
+
+  .blogdetail-tag-badge {
+    font-size: 12px;
+    padding: 4px 7px;
+  }
+}
+
+/* ---------- Small Mobile (≤400px) ---------- */
+@media (max-width: 400px) {
+  .blogsmain-banner {
+    padding: 60px 10px;
+  }
+
+  .blogsmain-heading {
+    font-size: 24px;
+  }
+
+  .blogsmain-breadcrumb {
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .blogsmain-home-icon {
+    font-size: 16px;
+  }
+
+  .blog-detail-title {
+    font-size: 20px;
+  }
+
+  .bdp-big-heading-text {
+    font-size: 20px;
+  }
+
+  .bdp-para-text {
+    font-size: 12.5px;
+  }
+
+  .bdp-list-text {
+    padding-left: 0.9rem;
+  }
+
+  .blogdetail-tag-badge {
+    font-size: 11.5px;
+    padding: 3px 6px;
+  }
+}
+/* ==============================
+   SEARCH RESULTS – IMAGE LEFT, TITLE RIGHT
+============================== */
+.blogsmain-search-results {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blogsmain-search-results a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  background: #f9f9f9;
+}
+
+.blogsmain-search-results a img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.blogsmain-search-results a span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.blogsmain-search-results p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  padding: 5px 0;
+}

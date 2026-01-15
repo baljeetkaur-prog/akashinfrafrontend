@@ -1,0 +1,168 @@
+/* ================================
+   ADMIN CONTACT – SAME AS CAROUSEL
+================================ */
+
+/* BODY / CONTAINER */
+.admin-contact {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.admin-contact h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.admin-contact h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* LABELS */
+.admin-contact label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* INPUTS & SELECTS */
+.admin-contact input[type="text"],
+.admin-contact input[type="number"],
+.admin-contact select,
+.admin-contact textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.admin-contact input:focus,
+.admin-contact select:focus,
+.admin-contact textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.admin-contact input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE PREVIEW */
+.admin-contact .image-preview {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.admin-contact .image-preview img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+/* IMAGE BUTTONS */
+.admin-contact .image-preview button {
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.admin-contact .image-preview .replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.admin-contact .image-preview .delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+/* CONTACT DETAIL CARD */
+.admin-contact .contact-card {
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* ADD BUTTON */
+.admin-contact button.add-item {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.admin-contact button.add-item:hover {
+  background: #005f87;
+}
+
+/* SAVE BUTTON */
+.admin-contact button.save-all {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.admin-contact button.save-all:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .admin-contact {
+    padding: 15px 20px;
+  }
+
+  .admin-contact .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+/* EDITOR FOCUS FIX */
+.admin-contact [contenteditable]:focus,
+.admin-contact iframe:focus,
+.admin-contact div:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

@@ -1,0 +1,324 @@
+/* CONTACT SECTION */
+.contactsec {
+  display: flex;
+  width: 100%;
+  height: 600px; /* total height of section */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* remove any extra scroll/space */
+  box-sizing: border-box;
+}
+
+.contact-left,
+.contact-right {
+  width: 50%; /* split section into two halves */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* LEFT - MAP */
+.contact-left iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block; /* removes extra space under iframe */
+}
+
+/* RIGHT - BACKGROUND IMAGE */
+.contact-right {
+  position: relative;
+}
+
+.contact-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* BLACK GLASS OVERLAY */
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75); /* darker overlay */
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* CONTENT INSIDE RIGHT HALF */
+.contact-content {
+  max-width: 600px; /* restrict width to right half content */
+  width: 100%;
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
+
+.contact-content h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* CONTACT INFO BOXES */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #f15928;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  font-size: 17px;
+  color: #ccc;
+}
+
+.contact-detail {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .contactsec {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    height: 400px;
+  }
+
+  .contact-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .contactsec {
+    flex-direction: column; /* stack map first, then contact */
+    height: auto;           /* let height adjust naturally */
+  }
+
+  /* LEFT (MAP) */
+  .contact-left {
+    width: 100%;
+    height: 300px;          /* smaller height for mobile */
+  }
+
+  .contact-left iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* RIGHT (CONTACT OVERLAY) */
+  .contact-right {
+    width: 100%;
+    height: auto;           /* let height adjust to content */
+  }
+
+  .contact-bg {
+    height: auto;
+    min-height: 300px;      /* ensures visible background */
+  }
+
+  .contact-overlay {
+    position: relative;     /* relative so content is centered naturally */
+    width: 100%;
+    height: auto;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;    /* spacing from edges */
+  }
+
+  /* CENTER CONTENT */
+  .contact-content {
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .contact-content h2 {
+    font-size: 32px;        /* smaller title */
+    margin-bottom: 15px;
+  }
+
+  .contact-content p {
+    font-size: 15px;        /* smaller paragraph */
+    margin-bottom: 20px;
+  }
+
+  /* CONTACT INFO BOXES */
+  .contact-info {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .contact-label {
+    font-size: 14px;
+  }
+
+  .contact-detail {
+    font-size: 16px;
+  }
+}
+/* CONTACT TEXT INLINE FOR LABEL + VALUE */
+.contact-text {
+  display: inline;       /* ensure label + value sit together */
+}
+
+.contact-label {
+  font-size: 17px;
+  color: #ccc;           /* gray label */
+  margin: 0;
+  padding: 0;
+}
+
+.contact-detail {
+  font-size: 20px;
+  color: #fff;           /* white value/text */
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove any extra space between label and value */
+.contact-label::after {
+  content: "";           /* no space after label */
+}
+/* CONTACT TEXT INLINE FOR LABEL + VALUE */
+/* CONTACT TEXT: label above value */
+.contact-text {
+  display: flex;
+  flex-direction: column;  /* stack label and value vertically */
+  gap: 5px;                /* small space between label and value */
+  align-items: flex-start; /* left-align */
+}
+
+/* Reset all heading/p styles for dynamic tags inside contact-text */
+.contact-text h1,
+.contact-text h2,
+.contact-text h3,
+.contact-text h4,
+.contact-text h5,
+.contact-text h6,
+.contact-text p {
+  margin: 0;           /* remove default margins */
+  padding: 0;
+  line-height: 1;      /* tighten spacing */
+  display: inline;     /* make them inline */
+}
+
+/* Label styling */
+.contact-label {
+  font-size: 17px;
+  color: #ccc;         /* gray label */
+  font-weight: normal;
+}
+
+/* Value styling */
+.contact-detail {
+  font-size: 20px;
+  color: #fff;         /* white text */
+  font-weight: 600;
+}
+/* FORCE CONTACT DETAIL COLOR */
+.contact-detail,
+.contact-detail h1,
+.contact-detail h2,
+.contact-detail h3,
+.contact-detail h4,
+.contact-detail h5,
+.contact-detail h6,
+.contact-detail p {
+  color: #fff !important;   /* force white color */
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline;
+  font-size: 20px !important; 
+}
+@media (max-width: 768px) {
+  .contact-text {
+    align-items: center;   /* center label + value on small screens */
+    gap: 3px;              /* slightly smaller gap */
+  }
+
+  .contact-label {
+    font-size: 14px;       /* smaller label */
+  }
+
+  .contact-detail,
+  .contact-detail h1,
+  .contact-detail h2,
+  .contact-detail h3,
+  .contact-detail h4,
+  .contact-detail h5,
+  .contact-detail h6,
+  .contact-detail p {
+    font-size: 16px;       /* smaller value text */
+  }
+}

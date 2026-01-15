@@ -1,0 +1,126 @@
+/* contactAdmin.css */
+
+/* BODY / CONTAINER */
+.contact-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.contact-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.contact-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* LABELS */
+.contact-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* INPUTS & SELECTS */
+.contact-admin input[type="text"],
+.contact-admin input[type="number"],
+.contact-admin select,
+.contact-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.contact-admin input:focus,
+.contact-admin select:focus,
+.contact-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* TEXTAREA */
+.contact-admin textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* SAVE BUTTON */
+.contact-admin button.save-contact {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact-admin button.save-contact:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.contact-admin button.save-contact:hover:enabled {
+  background: #005f87;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-admin {
+    padding: 15px;
+  }
+}
+
+/* ===== EDITOR / FOCUS FIX ===== */
+.contact-admin [contenteditable]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.contact-admin iframe:focus {
+  outline: none !important;
+}
+
+.contact-admin .editor,
+.contact-admin .simple-editor,
+.contact-admin .editor-container {
+  outline: none;
+}
+
+.contact-admin .editor:focus,
+.contact-admin .simple-editor:focus,
+.contact-admin .editor-container:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contact-admin div:focus-visible {
+  outline: none;
+}
+/* SEO LONG FIELDS */
+.contact-admin textarea.seo-long {
+  min-height: 120px;
+  line-height: 1.5;
+}

@@ -1,0 +1,41 @@
+/* AdminHome.css */
+
+.carousel-admin {
+  max-width: 1100px;
+  padding: 2rem;
+}
+
+.carousel-admin h1 {
+  margin-bottom: 1.5rem;
+}
+
+.carousel-admin section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.carousel-admin h2 {
+  margin-bottom: 1rem;
+}
+
+.carousel-admin label {
+  display: block;
+  font-weight: 600;
+  margin: 0.75rem 0 0.25rem;
+}
+
+.carousel-admin input,
+.carousel-admin textarea,
+.carousel-admin select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.save-btn.saving {
+  opacity: 0.7;
+  cursor: not-allowed;
+}

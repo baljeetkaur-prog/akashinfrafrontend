@@ -1,0 +1,220 @@
+/* FeaturedInvestmentAdmin.css */
+
+/* BODY / CONTAINER */
+.featured-investment-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.featured-investment-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.featured-investment-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+  margin-top: 10px;
+}
+
+/* LABELS */
+.featured-investment-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #555;
+}
+
+/* INPUTS AND SELECTS */
+.featured-investment-admin input[type="text"],
+.featured-investment-admin input[type="number"],
+.featured-investment-admin select,
+.featured-investment-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.featured-investment-admin input:focus,
+.featured-investment-admin select:focus,
+.featured-investment-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.featured-investment-admin input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE PREVIEW */
+.featured-investment-admin .image-preview {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.featured-investment-admin .image-preview img {
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+/* ALT INPUT UNDER IMAGE */
+.featured-investment-admin .image-preview input[type="text"] {
+  width: 100%;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+
+/* IMAGE BUTTONS */
+.featured-investment-admin .image-preview button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px 2px 0 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.featured-investment-admin .image-preview button.replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.featured-investment-admin .image-preview button.replace:hover {
+  background: #005f87;
+}
+
+.featured-investment-admin .image-preview button.delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+.featured-investment-admin .image-preview button.delete:hover {
+  background: #b52a3a;
+}
+
+/* CARD / FEATURE BLOCKS */
+.featured-investment-admin .feature-card,
+.featured-investment-admin .bottom-stat {
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* FEATURE INPUTS INLINE */
+.featured-investment-admin .feature-card input,
+.featured-investment-admin .feature-card select {
+  width: 60%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* ADD BUTTONS */
+.featured-investment-admin button {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.featured-investment-admin button:hover {
+  background: #005f87;
+}
+
+/* REMOVE / DELETE BUTTONS */
+.featured-investment-admin button[style*="red"] {
+  background: #dc3232 !important;
+}
+
+.featured-investment-admin button[style*="red"]:hover {
+  background: #b52a3a !important;
+}
+
+/* SAVE BUTTON */
+.featured-investment-admin > button:last-of-type {
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+}
+
+.featured-investment-admin > button:last-of-type:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.featured-investment-admin > button:last-of-type:hover:enabled {
+  background: #005f87;
+}
+
+/* FLEX IMAGE WRAPPER */
+.featured-investment-admin .image-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .featured-investment-admin {
+    padding: 15px 20px;
+  }
+
+  .featured-investment-admin .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+
+  .featured-investment-admin .feature-card input,
+  .featured-investment-admin .feature-card select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* ===== SIMPLE EDITOR FOCUS FIX ===== */
+.featured-investment-admin [contenteditable]:focus,
+.featured-investment-admin iframe:focus,
+.featured-investment-admin .editor:focus,
+.featured-investment-admin .simple-editor:focus,
+.featured-investment-admin .editor-container:focus,
+.featured-investment-admin div:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}

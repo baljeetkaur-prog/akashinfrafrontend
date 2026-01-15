@@ -1,0 +1,204 @@
+/* BODY/CONTAINER */
+.team-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+  box-sizing: border-box;
+}
+
+/* PAGE TITLE */
+.team-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.team-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+.team-admin h3, 
+.team-admin h4 {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #23282d;
+}
+
+/* LABELS */
+.team-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 12px;
+  color: #555;
+}
+
+/* INPUTS AND SELECTS */
+.team-admin input[type="text"],
+.team-admin input[type="number"],
+.team-admin select,
+.team-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.team-admin input:focus,
+.team-admin select:focus,
+.team-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.team-admin input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* MEMBER CARD */
+.team-admin .member-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+
+/* IMAGE PREVIEW CONTAINERS */
+.team-admin .image-preview {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.team-admin .image-preview img {
+  display: block;
+  max-width: 140px;
+  max-height: 140px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+/* ALT INPUTS UNDER IMAGE */
+.team-admin .image-preview input[type="text"] {
+  width: 100%;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+
+/* IMAGE BUTTONS */
+.team-admin .image-preview button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px 2px 0 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.team-admin .image-preview button.replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.team-admin .image-preview button.replace:hover {
+  background: #005f87;
+}
+
+.team-admin .image-preview button.delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+.team-admin .image-preview button.delete:hover {
+  background: #b52a3a;
+}
+
+/* ADD BUTTONS */
+.team-admin button.add-member {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.team-admin button.add-member:hover {
+  background: #218838;
+}
+
+/* REMOVE MEMBER BUTTON */
+.team-admin button.remove-member {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.team-admin button.remove-member:hover {
+  background: #c82333;
+}
+
+/* SAVE BUTTON */
+.team-admin button.save-all {
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 16px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.team-admin button.save-all:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.team-admin button.save-all:hover:enabled {
+  background: #005f87;
+}
+
+/* SIMPLE EDITOR FOCUS FIX */
+.team-admin [contenteditable]:focus,
+.team-admin iframe:focus,
+.team-admin .editor,
+.team-admin .simple-editor,
+.team-admin .editor-container,
+.team-admin div:focus-visible {
+  outline: none;
+  box-shadow: none;
+}

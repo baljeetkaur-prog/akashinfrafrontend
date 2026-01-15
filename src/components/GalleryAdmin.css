@@ -1,0 +1,172 @@
+/* galleryAdmin.css */
+
+/* BODY / CONTAINER */
+.gallery-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.gallery-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.gallery-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* INPUTS & SELECTS */
+.gallery-admin input[type="text"],
+.gallery-admin select {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.gallery-admin input:focus,
+.gallery-admin select:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.gallery-admin input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE GRID */
+.gallery-admin .gallery-image-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* IMAGE PREVIEW CARD */
+.gallery-admin .gallery-image-card {
+  display: inline-block;
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 160px;
+}
+
+/* IMAGE */
+.gallery-admin .gallery-image-card img {
+  display: block;
+  max-width: 140px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 0 auto 6px;
+}
+
+/* ALT INPUT */
+.gallery-admin .gallery-image-card input[type="text"] {
+  font-size: 12px;
+  padding: 4px 6px;
+  margin-bottom: 6px;
+}
+
+/* IMAGE BUTTONS */
+.gallery-admin .gallery-image-card button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* REPLACE BUTTON */
+.gallery-admin .gallery-image-card button.replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.gallery-admin .gallery-image-card button.replace:hover {
+  background: #005f87;
+}
+
+/* DELETE BUTTON */
+.gallery-admin .gallery-image-card button.delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+.gallery-admin .gallery-image-card button.delete:hover {
+  background: #b52a3a;
+}
+
+/* SAVE BUTTON */
+.gallery-admin button.save-gallery {
+  margin-top: 30px;
+  padding: 12px 26px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.gallery-admin button.save-gallery:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.gallery-admin button.save-gallery:hover:enabled {
+  background: #005f87;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gallery-admin {
+    padding: 15px;
+  }
+
+  .gallery-admin .gallery-image-card {
+    width: 120px;
+  }
+
+  .gallery-admin .gallery-image-card img {
+    max-width: 100px;
+    max-height: 80px;
+  }
+}
+
+/* REMOVE EDITOR FOCUS OUTLINES */
+.gallery-admin [contenteditable]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.gallery-admin iframe:focus {
+  outline: none !important;
+}

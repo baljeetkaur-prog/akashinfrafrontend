@@ -1,0 +1,179 @@
+/* ===============================
+   PAGE BUILDER ADMIN
+================================ */
+
+/* BODY / CONTAINER */
+.page-builder-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.page-builder-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.page-builder-admin h2,
+.page-builder-admin h3,
+.page-builder-admin h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+}
+
+/* LABELS */
+.page-builder-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* INPUTS / SELECTS / TEXTAREA */
+.page-builder-admin input[type="text"],
+.page-builder-admin select,
+.page-builder-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.page-builder-admin input:focus,
+.page-builder-admin select:focus,
+.page-builder-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.page-builder-admin input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* BLOCK WRAPPER */
+.page-builder-admin .block-wrapper {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+/* IMAGE PREVIEW */
+.page-builder-admin .image-preview {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.page-builder-admin .image-preview img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+/* BUTTONS */
+.page-builder-admin button {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+.page-builder-admin button:hover {
+  background: #005f87;
+}
+
+/* REMOVE BUTTON */
+.page-builder-admin button.remove {
+  background: #dc3232;
+}
+
+.page-builder-admin button.remove:hover {
+  background: #b52a3a;
+}
+
+/* SAVE BUTTON */
+.page-builder-admin .save-page {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+}
+
+.page-builder-admin .save-page:hover {
+  background: #005f87;
+}
+
+/* IMAGE FLEX */
+.page-builder-admin .image-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* CONTENT ITEM */
+.page-builder-admin .content-item {
+  border: 1px dashed #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #fafafa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-builder-admin {
+    padding: 15px 20px;
+  }
+
+  .page-builder-admin .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
+
+/* ===== EDITOR FOCUS FIX ===== */
+.page-builder-admin [contenteditable]:focus,
+.page-builder-admin textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.page-builder-admin input,
+.page-builder-admin textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box; /* ensures padding doesn't break layout */
+}
+.page-builder-admin textarea {
+  min-height: 80px;
+}

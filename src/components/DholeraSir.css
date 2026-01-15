@@ -1,0 +1,1263 @@
+/* ===============================
+   DHOLERA PAGE BANNER
+   =============================== */
+
+.dholera-banner {
+  width: 100%;
+  padding: 120px 20px; /* same as About banner */
+  background-color: #111;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.dholera-banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dholera-banner-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.dholera-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.dholera-home-icon {
+  font-size: 20px;
+  color: #f15928;
+}
+
+/* ===============================
+   CONTENT SECTION (align with About)
+   =============================== */
+
+.dholera-content-section {
+  width: 100%;
+  padding: 60px 20px 0 20px; /* reduced top padding to match About page */
+  box-sizing: border-box;
+}
+
+.dholera-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Headings and text match About page */
+.dholera-small-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f15928;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  margin-top: 0; /* reset top margin */
+}
+
+.dholera-heading-big {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 2px; /* small gap below small title */
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.dholera-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+/* ===============================
+   INTRO FLEX SECTION
+   =============================== */
+
+.dholera-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.dholera-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.dholera-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.dholera-intro-img {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+  .dholera-banner-heading {
+    font-size: 32px;
+  }
+
+  .dholera-breadcrumb {
+    font-size: 14px;
+  }
+
+  .dholera-small-title {
+    font-size: 14px;
+  }
+
+  .dholera-heading-big {
+    font-size: 26px;
+  }
+
+  .dholera-para {
+    font-size: 14px;
+  }
+
+  .dholera-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .dholera-left,
+  .dholera-right {
+    text-align: center;
+  }
+
+  .dholera-intro-img {
+    max-width: 90%;
+  }
+}
+/* IMPORTANCE SECTION */
+.dholera-importance {
+  text-align: left;
+}
+
+.importance-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.importance-card {
+  background-color: #f15928;
+  color: #fff;
+  flex: 1 1 220px;
+  max-width: 250px;
+  padding: 25px 20px;
+  border-radius: 4px;
+  position: relative; /* needed for absolute positioning of circle */
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+.importance-card::before {
+  content: "";
+  position: absolute;
+  top: -15px;    /* distance from top */
+  left: -15px;   /* distance from left */
+  width: 100px;  /* small circle size */
+  height: 100px;
+  background-color: #fff7f0; /* white circle */
+  border-radius: 50%;     /* makes it a circle */
+  z-index: 1;             /* behind content */
+}
+.importance-card:hover{
+    cursor: pointer;
+}
+
+.importance-icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2; 
+  color: #f15928; 
+  display: inline-block;
+  transition: transform 0.9s ease-in-out; /* smooth scaling */
+}
+
+.importance-card:hover .importance-icon {
+  transform: scale(1.2); /* scale up smoothly */
+}
+
+.importance-card p {
+  font-size: 16px;
+  text-align: right;
+  position: relative; 
+  z-index: 2; 
+  line-height: 1.5;
+  margin: 0;
+}
+/* ⭐ Highlight Section */
+.dholera-highlight {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+  align-items: flex-start;   /* 🔥 shift items to top-left */
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+/* LEFT IMAGE */
+.highlight-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* 🔥 LEFT ALIGN INSIDE LEFT SECTION */
+}
+
+
+.highlight-img {
+  width: 100%;
+
+}
+
+/* RIGHT CONTENT */
+.highlight-right {
+  flex: 1.2;
+}
+
+.highlight-title {
+  font-size: 28px;
+  margin-top:0; 
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Highlight Points */
+/* CLEAN TICK LIST */
+.tick-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+    columns: 2;
+  column-gap: 40px;
+}
+
+.tick-list li {
+  position: relative;
+   break-inside: avoid;
+  font-size: 16px;
+  color: #555;
+  padding-left: 32px;
+  margin-bottom: 14px;
+  line-height: 1.5;
+  transition: 0.3s ease;
+}
+
+/* Tick icon */
+.tick-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.tick-list li:hover {
+  cursor: pointer;
+}
+.tick-list li:nth-child(odd)::before {
+  color: #f15928;   /* orange */
+}
+
+.tick-list li:nth-child(even)::before {
+  color: #333;      /* black */
+}
+/* ⭐ Connectivity Section */
+.dholera-connectivity {
+  margin-top: 80px;
+}
+
+.connectivity-heading {
+font-size: 35px;
+  font-weight: 700;
+  margin-top: 2px; /* small gap below small title */
+  color: #111;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.connectivity-para {
+  max-width: 1300px;
+  margin: 0 auto 80px;    /* centers and adds space below */
+  text-align: center;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* Cards Wrapper */
+.connectivity-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  column-gap: 25px;   /* spacing between columns (same as before) */
+  row-gap: 80px;      /* MORE space between rows */
+}
+/* Individual Card */
+.connectivity-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+ border-left: none;
+position: relative;
+}
+.connectivity-card:hover{
+    cursor: pointer;
+}
+.connectivity-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 4px;
+  background: #f15928;
+  transform: translateX(-50%) scaleX(0); /* hidden */
+  transform-origin: center;
+  transition: transform 0.35s ease-out;
+}
+
+.connectivity-card:hover::after {
+  transform: translateX(-50%) scaleX(1); /* expands left & right */
+}
+
+/* Card Title */
+.connectivity-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #222;
+  text-align: center;
+}
+
+/* Card Para */
+.connectivity-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Read More */
+.connectivity-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f15928;
+  transition: 0.3s;
+}
+
+.connectivity-link:hover {
+  color: #c43f15;
+}
+
+/* Responsive */
+@media (max-width:768px){
+  .connectivity-cards {
+    grid-template-columns: 1fr;
+  }
+}
+.connectivity-more-card .small-heading {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.connectivity-more-card .big-heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Cleaned button style */
+.connectivity-more-card .more-link {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #333 !important;
+  text-decoration: none; /* NO underline */
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+/* Image Circle Style */
+.with-icon {
+  position: relative;
+  padding-top: 40px !important; /* space for the image */
+}
+
+.icon-wrapper {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: -60px;  /* half inside, half outside */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #f15928;
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image inside circle without distortion */
+}
+.connectivity-card,
+.connectivity-card * {
+  text-decoration: none !important;
+}
+
+/* Force correct colors for headings & paragraphs */
+.connectivity-card h3 {
+  color: #222 !important;
+}
+
+.connectivity-card p {
+  color: #555 !important;
+}
+/* ===============================
+   RESPONSIVE MEDIA QUERIES
+   =============================== */
+
+/* ===== TABLETS & SMALL SCREENS ===== */
+@media (max-width: 1024px) {
+
+  /* Intro Flex Section */
+  .dholera-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .dholera-left,
+  .dholera-right {
+    text-align: center;
+  }
+
+  .dholera-intro-img {
+    max-width: 70%;
+  }
+
+  /* Importance Cards */
+  .importance-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .importance-card {
+    max-width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .importance-card p {
+    text-align: center;
+  }
+
+  .importance-icon {
+    margin: 0 auto 15px auto;
+  }
+
+  /* Highlight Section */
+  .dholera-highlight {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .highlight-left,
+  .highlight-right {
+    flex: 1;
+    text-align: center;
+  }
+
+  .tick-list {
+    columns: 1;
+    column-gap: 0;
+  }
+
+  .tick-list li {
+    padding-left: 24px;
+  }
+}
+
+/* ===== TABLETS / LARGE PHONES ===== */
+@media (max-width: 768px) {
+
+  /* Banner */
+  .dholera-banner-heading {
+    font-size: 32px;
+  }
+
+  .dholera-breadcrumb {
+    font-size: 14px;
+  }
+
+  /* Intro Text */
+  .dholera-small-title {
+    font-size: 14px;
+  }
+
+  .dholera-heading-big {
+    font-size: 26px;
+  }
+
+  .dholera-para {
+    font-size: 14px;
+  }
+
+  /* Intro Flex Section */
+  .dholera-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .dholera-left,
+  .dholera-right {
+    text-align: center;
+  }
+
+  .dholera-intro-img {
+    max-width: 90%;
+  }
+
+  /* Importance Cards */
+  .importance-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .importance-icon {
+    font-size: 32px;
+  }
+
+  /* Highlight Section Image */
+  .highlight-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* Connectivity Cards */
+  .connectivity-cards {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .connectivity-card h3 {
+    font-size: 18px;
+  }
+
+  .connectivity-card p {
+    font-size: 14px;
+  }
+
+  .connectivity-more-card .big-heading {
+    font-size: 20px;
+  }
+
+  .connectivity-more-card .more-link {
+    padding: 8px 20px;
+  }
+
+  /* Circle Icons */
+  .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    top: -50px;
+  }
+}
+
+/* ===== SMALL MOBILE DEVICES ===== */
+@media (max-width: 480px) {
+
+  /* Banner */
+  .dholera-banner-heading {
+    font-size: 24px;
+  }
+
+  .dholera-heading-big {
+    font-size: 22px;
+  }
+
+  .dholera-para {
+    font-size: 13px;
+  }
+
+  /* Importance Cards */
+  .importance-card {
+    padding: 15px;
+  }
+
+  .importance-icon {
+    font-size: 28px;
+  }
+
+  /* Tick List in Highlights */
+  .tick-list li {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  /* Connectivity Cards */
+  .connectivity-card {
+    padding: 15px;
+  }
+
+  .connectivity-card h3 {
+    font-size: 16px;
+  }
+
+  .connectivity-card p {
+    font-size: 13px;
+  }
+
+  .connectivity-more-card .big-heading {
+    font-size: 18px;
+  }
+
+  .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    top: -40px;
+  }
+}
+/* MOBILE: text above image */
+@media (max-width: 768px) {
+  .dholera-flex {
+    flex-direction: column; /* change from column-reverse to column */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .dholera-left,
+  .dholera-right {
+    text-align: left;
+  }
+
+  .dholera-intro-img {
+    max-width: 90%;
+  }
+}
+/* ===== MOBILE & EXTRA SMALL SCREENS ===== */
+@media (max-width: 768px) {
+
+  .importance-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* reduce gap between cards */
+    justify-items: center; /* center cards in their columns */
+  }
+
+  .importance-card {
+    max-width: 100%;
+    padding: 25px 20px;
+    min-height: 140px; /* taller cards for better spacing */
+    position: relative;
+  }
+
+  .importance-card::before {
+    top: -10px;
+    left: -10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .importance-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    color: #f15928;
+  }
+
+  .importance-card p {
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 480px) {
+
+  .importance-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .importance-card {
+    padding: 20px 15px;
+    min-height: 130px;
+  }
+
+  .importance-card::before {
+    width: 50px;
+    height: 50px;
+    left: -5px;
+    top: -5px;
+  }
+
+  .importance-icon {
+    font-size: 24px;
+  }
+
+  .importance-card p {
+    font-size: 13px;
+    text-align: right;
+  }
+}
+/* ===== MOBILE & EXTRA SMALL SCREENS ===== */
+@media (max-width: 768px) {
+
+  .importance-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px;
+    justify-items: center;
+  }
+
+  .importance-card {
+    max-width: 100%;
+    padding: 25px 20px;
+    min-height: 140px;
+    position: relative;
+  }
+
+  .importance-card::before {
+    content: "";
+    position: absolute;
+    top: 60%; /* vertical center-ish */
+    left: -20px; /* slightly inside left */
+    width: 80px;
+    height: 80px;
+    background-color: #fff7f0;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .importance-icon {
+    position: absolute; /* absolute on top of circle */
+    top: 80%; /* same as circle */
+    left: 10px; /* same as circle */
+    transform: translateY(-50%);
+    font-size: 28px;
+    z-index: 2;
+    color: #f15928;
+    margin: 0;
+  }
+
+  .importance-card p {
+    font-size: 14px;
+    text-align: right;
+    line-height: 1.5;
+    margin: 0;
+  }
+    .importance-card:hover .importance-icon {
+    transform: none; /* no scaling on hover */
+  }
+
+  .importance-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* ===== EXTRA SMALL SCREENS ===== */
+@media (max-width: 480px) {
+
+  .importance-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    justify-items: center;
+  }
+
+  .importance-card {
+    padding: 20px 15px;
+    min-height: 130px;
+    position: relative;
+  }
+
+  .importance-card::before {
+    content: "";
+    position: absolute;
+    top: 70%;
+    left: -15px;
+    width: 70px;
+    height: 70px;
+    background-color: #fff7f0;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .importance-icon {
+    position: absolute;
+    top: 85%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 2;
+    color: #f15928;
+    margin: 0;
+  }
+
+  .importance-card p {
+    font-size: 13px;
+    text-align: right;
+  }
+}
+@media (max-width: 1024px) {
+
+  .dholera-highlight {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .highlight-left,
+  .highlight-right {
+    flex: 1;
+    width: 100%;
+    text-align: left; /* left align content */
+  }
+
+  .highlight-img {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .tick-list {
+    columns: 1; /* single column for better readability */
+    column-gap: 0;
+  }
+
+  .tick-list li {
+    padding-left: 28px;
+  }
+}
+
+/* ===== MOBILE / EXTRA SMALL SCREENS ===== */
+@media (max-width: 768px) {
+
+  .dholera-highlight {
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .highlight-left,
+  .highlight-right {
+    width: 100%;
+    text-align: left; /* keep points left-aligned */
+  }
+
+  .highlight-img {
+    width: 100%;
+    margin: 0 auto 15px auto;
+  }
+
+  .tick-list {
+    columns: 1;
+    column-gap: 0;
+  }
+
+  .tick-list li {
+    font-size: 14px;
+    padding-left: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+/* ===== EXTRA SMALL MOBILE DEVICES ===== */
+@media (max-width: 480px) {
+
+  .dholera-highlight {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .highlight-img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .tick-list li {
+    font-size: 13px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+/* ===== TABLETS / SMALL SCREENS ===== */
+@media (max-width: 1024px) {
+  .connectivity-heading {
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .connectivity-para {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+/* ===== MOBILE DEVICES ===== */
+@media (max-width: 768px) {
+  .connectivity-heading {
+    text-align: left;
+    font-size: 26px;
+  }
+
+  .connectivity-para {
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+/* ===== EXTRA SMALL MOBILE DEVICES ===== */
+@media (max-width: 480px) {
+  .connectivity-heading {
+    text-align: left;
+    font-size: 22px;
+  }
+
+  .connectivity-para {
+    text-align: left;
+    font-size: 13px;
+  }
+}
+/* ===== TABLETS / MOBILE & EXTRA SMALL SCREENS ===== */
+@media (max-width: 1024px) {
+  /* Reduce top padding for main content section */
+  .dholera-content-section {
+    padding-top: 40px !important; /* default 60px, reduce on tablet */
+  }
+
+  /* Reduce spacing before Importance section */
+  .dholera-importance {
+    margin-top: 30px !important; /* default 80px */
+  }
+
+  /* Reduce spacing before Highlight section */
+  .dholera-highlight {
+    margin-top: 50px; /* default 80px */
+    padding: 20px; /* reduce padding slightly */
+    gap: 25px; /* reduce gap between left & right */
+  }
+
+  /* Reduce spacing before Connectivity section */
+  .dholera-connectivity {
+    margin-top: 30px !important; /* default 80px */
+  }
+
+  .connectivity-para {
+    margin-bottom: 40px; /* default 80px */
+  }
+}
+
+/* ===== MOBILE DEVICES ===== */
+@media (max-width: 768px) {
+  .dholera-content-section {
+    padding-top: 30px;
+  }
+
+  .dholera-importance {
+    margin-top: 30px;
+  }
+
+  .dholera-highlight {
+    margin-top: 40px;
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .dholera-connectivity {
+    margin-top: 40px;
+  }
+
+  .connectivity-para {
+    margin-bottom: 30px;
+  }
+}
+
+/* ===== EXTRA SMALL MOBILE DEVICES ===== */
+@media (max-width: 480px) {
+  .dholera-content-section {
+    padding-top: 20px;
+  }
+
+  .dholera-importance {
+    margin-top: 25px;
+  }
+
+  .dholera-highlight {
+    margin-top: 30px;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .dholera-connectivity {
+    margin-top: 30px;
+  }
+
+  .connectivity-para {
+    margin-bottom: 20px;
+  }
+}
+/* Reduce gap between small-heading and big-heading */
+.small-heading {
+  margin-bottom: 5px; /* default might be 10-15px, reduce to 5px */
+}
+
+.big-heading {
+  margin-top: 0; /* remove extra top margin if any */
+}
+@media (max-width: 1024px) {
+  .dholera-banner {
+    padding: 100px 20px;
+  }
+
+  .dholera-banner-heading {
+    font-size: 42px;
+  }
+
+  .dholera-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .dholera-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* ---------- Tablets (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .dholera-banner {
+    padding: 80px 16px;
+  }
+
+  .dholera-banner-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .dholera-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .dholera-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Mobile (≤ 576px) ---------- */
+@media (max-width: 576px) {
+  .dholera-banner {
+    padding: 70px 12px;
+  }
+
+  .dholera-banner-heading {
+    font-size: 28px;
+  }
+
+  .dholera-breadcrumb {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .dholera-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media (max-width: 400px) {
+  .dholera-banner {
+    padding: 60px 10px;
+  }
+
+  .dholera-banner-heading {
+    font-size: 24px;
+  }
+
+  .dholera-breadcrumb {
+    font-size: 13px;
+  }
+
+  .dholera-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* Optional: breadcrumb row wrap for short text */
+@media (max-width: 576px) {
+  .dholera-breadcrumb {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
+  .dholera-small-title {
+    font-size: 14px; /* same as About */
+  }
+
+  .dholera-heading-big {
+    font-size: 26px; 
+    line-height: 1.3;
+  }
+
+  .dholera-para {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 768px) {
+  .importance-card p {
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .importance-icon {
+    font-size: 32px; /* match About strength icon scaling */
+  }
+}
+
+@media (max-width: 480px) {
+  .importance-card p {
+    font-size: 13px;
+  }
+
+  .importance-icon {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .tick-list li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tick-list li {
+    font-size: 13px;
+  }
+}
+/* Mobile / extra small screens */
+@media (max-width: 768px) {
+  .tick-list {
+    columns: 1;
+    column-gap: 0;
+    padding-left: 0; /* reset any extra */
+  }
+
+  .tick-list li {
+    font-size: 14px;
+    padding-left: 28px; /* space for tick */
+    margin-bottom: 12px; /* add space between items */
+    line-height: 1.6; /* enough vertical spacing */
+    position: relative;
+  }
+
+  .tick-list li::before {
+    top: 50%; /* vertical center of text */
+    transform: translateY(-50%); /* adjust perfectly */
+    left: 0;
+    font-size: 18px; /* adjust size */
+    font-weight: 600;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .tick-list li {
+    padding-left: 24px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .tick-list li::before {
+    font-size: 16px;
+  }
+}
+/* Mobile / extra small screens */
+@media (max-width: 768px) {
+  /* Add spacing between paragraph and first card */
+  .connectivity-cards {
+    margin-top: 60px; /* space between paragraph and first card */
+  }
+
+  /* Existing mobile grid setup */
+  .connectivity-cards {
+    grid-template-columns: 1fr; /* single column on mobile */
+    row-gap: 50px;
+  }
+}
+.dholera-breadcrumb-link {
+  color: #f15928;        /* match icon color */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+/* Last card headings - force white */
+.connectivity-more-card .last-small-heading
+ {
+  color: #fff !important;
+  text-align: left;
+  font-weight: 500; 
+  font-size: 15px; 
+  text-transform: uppercase;
+  margin-bottom:5px; 
+}
+.connectivity-more-card .last-big-heading{
+  color: #fff !important; 
+  text-align: left;
+  margin-top:0; 
+  font-size: 25px; 
+}
+

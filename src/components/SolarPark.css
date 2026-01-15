@@ -1,0 +1,337 @@
+/* ================================
+   BANNER
+=================================== */
+.solarpark-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.solarpark-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solarpark-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.solarpark-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.solarpark-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+@media (max-width: 1024px) {
+  .solarpark-banner {
+    padding: 100px 20px;
+  }
+  .solarpark-heading {
+    font-size: 42px;
+  }
+  .solarpark-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+  .solarpark-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .solarpark-banner {
+    padding: 80px 16px;
+  }
+  .solarpark-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .solarpark-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+  .solarpark-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .solarpark-banner {
+    padding: 70px 12px;
+  }
+  .solarpark-heading {
+    font-size: 28px;
+  }
+  .solarpark-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+  }
+  .solarpark-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .solarpark-banner {
+    padding: 60px 10px;
+  }
+  .solarpark-heading {
+    font-size: 24px;
+  }
+  .solarpark-breadcrumb {
+    font-size: 13px;
+    gap: 4px;
+  }
+  .solarpark-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* ================================
+   MAIN CONTENT
+=================================== */
+.solarpark-content {
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Section text */
+.solarpark-section-text {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.solarpark-big-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top:0; 
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.solarpark-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Three images row */
+.solarpark-three-images-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.solarpark-image-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* ================================
+   Key Highlights List (Key Benefits)
+=================================== */
+.solarpark-points-section {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.solarpark-points-section h2 {
+  margin-bottom: 20px;
+  margin-top:0; 
+}
+
+.solarpark-points-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.solarpark-points-section li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.solarpark-points-section li::before {
+  content: "✓";
+  font-family: "cursive";
+  color: #f15928;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ================================
+   FAQ Section
+=================================== */
+.solarpark-faq-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.faq-item {
+  padding: 13px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.faq-icon {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-item.open h3 {
+  color: #f15928;
+}
+
+.faq-item.open .faq-icon {
+  color: #f15928;
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  margin-top: 20px;
+  padding-left: 34px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================================
+   RESPONSIVE
+=================================== */
+@media (max-width: 992px) {
+  .solarpark-three-images-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .solarpark-big-heading {
+    font-size: 26px;
+  }
+  .solarpark-para {
+    font-size: 14px;
+  }
+  .solarpark-three-images-row {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solarpark-big-heading {
+    font-size: 22px;
+  }
+  .solarpark-para {
+    font-size: 13px;
+  }
+}
+/* ================================
+   MOBILE PADDING FIX
+=================================== */
+@media (max-width: 768px) {
+  .solarpark-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top:40px !important; 
+  }
+
+  .solarpark-section-text,
+  .solarpark-three-images-row,
+  .solarpark-points-section,
+  .solarpark-faq-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .solarpark-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+/* ================================
+   MOBILE PADDING FIX FOR TOP SPACE
+=================================== */
+@media (max-width: 768px) {
+  /* Reduce top padding of main content */
+  .solarpark-content {
+    padding-top: 510px; /* much smaller top space */
+    padding-bottom: 30px; /* keep some bottom spacing */
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Remove extra left/right padding on inner sections */
+  .solarpark-section-text,
+  .solarpark-three-images-row,
+  .solarpark-points-section,
+  .solarpark-faq-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .solarpark-content {
+    padding-top: 8px; /* minimal top space on small mobiles */
+    padding-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.solarpark-breadcrumb-link {
+  color: #f15928;        /* match icon color or your preferred color */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}

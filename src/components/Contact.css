@@ -1,0 +1,467 @@
+/* Banner */
+.contactmain-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #111;
+  box-sizing: border-box;
+}
+
+.contactmain-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contactmain-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contactmain-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.contactmain-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+
+/* ---------------------------------------------- */
+/* MAIN WRAPPER - FORM LEFT, TEXT RIGHT */
+/* ---------------------------------------------- */
+.contactmain-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: flex-start;
+}
+
+/* LEFT — CONTACT FORM */
+.contactmain-left {
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 300px;
+}
+
+.contactmain-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: #111;
+  margin-top:0; 
+}
+
+.contactmain-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactmain-input,
+.contactmain-textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+}
+
+.contactmain-textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contactmain-btn {
+  background-color: #f15928;
+  color: #fff;
+    display: flex;
+  align-items: center;
+  gap: 6px; /* spacing between icon and text */
+
+  border: none;
+  padding: 12px 20px; /* extra horizontal padding for good look */
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  /* NEW */
+  width: fit-content;
+  align-self: flex-start;
+}
+.contactmain-btn:hover {
+  background-color: #000;
+}
+
+/* RIGHT — TEXT INFO */
+.contactmain-right {
+  min-width: 300px;
+  padding: 5px 5px;
+}
+
+.contactmain-para {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+  margin-top:5px; 
+  line-height: 1.6;
+}
+
+.contactmain-info-box {
+  display: flex;
+  align-items: center;   /* FIXED */
+  gap: 10px;
+  padding: 2px 0;
+  margin-top:0; 
+}
+
+.contactmain-info-icon {
+  font-size: 35px;
+  color: #f15928;
+}
+
+.contactmain-info-text {
+  font-size: 17px;
+  color: #333;
+  margin-top:5px; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactmain-wrapper {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contactmain-left,
+  .contactmain-right {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .contactmain-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  /* Right text first */
+  .contactmain-right-text {
+    order: 1;
+  }
+
+  /* Form below */
+  .contactmain-left-form {
+    order: 2;
+  }
+
+  /* Bigger fields */
+  .contactmain-input,
+  .contactmain-textarea {
+    font-size: 16px;
+    padding: 14px;
+    width: 100%;
+  }
+
+  .contactmain-form {
+    gap: 18px;
+  }
+}
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+
+  .contactmain-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  /* Right text first */
+  .contactmain-right-text {
+    order: 1;
+  }
+
+  /* Form below */
+  .contactmain-left-form {
+    order: 2;
+    width: 100%;
+    padding: 0 12px;        /* ⭐ Prevents inputs from touching edges */
+    box-sizing: border-box;  /* ⭐ Prevents overflow */
+  }
+
+  /* Inputs look full width inside padded container */
+  .contactmain-input,
+  .contactmain-textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    box-sizing: border-box;   /* ⭐ Ensures no overflow */
+  }
+
+  .contactmain-form {
+    gap: 18px;
+  }
+}
+/* Normal desktop – all icons equal */
+.contactmain-info-icon {
+  font-size: 35px;
+  color: #f15928;
+}
+
+/* Mobile equalization */
+@media (max-width: 768px) {
+  .location-icon {
+    font-size: 42px;    /* Bigger to visually match phone & mail */
+  }
+}
+/* Make ALL icons smaller on mobile */
+@media (max-width: 768px) {
+  .contactmain-info-icon {
+    font-size: 30px; /* Adjust as you like */
+  }
+}
+.contactmain-input,
+.contactmain-textarea {
+  border-radius: 0; /* Make inputs perfectly square */
+}
+/* ============================
+   CONTACT MOBILE FONT SIZE REDUCTIONS
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Banner Heading */
+  .contactmain-heading {
+    font-size: 32px; /* same as about */
+  }
+
+  /* Breadcrumb */
+  .contactmain-breadcrumb {
+    font-size: 14px; /* smaller font like about page */
+  }
+
+  /* Right Side Title */
+  .contactmain-title {
+    font-size: 26px; /* similar to aboutmain-big-heading */
+  }
+
+  /* Right Side Paragraph */
+  .contactmain-para {
+    font-size: 14px; /* match about para */
+    line-height: 1.5;
+  }
+
+  /* Contact Info Text */
+  .contactmain-info-text {
+    font-size: 14px; /* match about question/number */
+  }
+
+  /* Form Inputs */
+  .contactmain-input,
+  .contactmain-textarea {
+    font-size: 14px; /* slightly smaller on mobile */
+    padding: 12px;
+  }
+
+  /* Button */
+  .contactmain-btn {
+    font-size: 14px; /* smaller button text */
+    padding: 12px 28px;
+  }
+}
+/* Reduce top padding on mobile after banner */
+@media (max-width: 768px) {
+  .contactmain-content {
+    padding-top: 50px !important; /* reduce from 80px to 40px */
+    padding-bottom: 50px !important; /* optional: reduce bottom space too */
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+  }
+
+  .contactmain-wrapper {
+    gap: 25px !important; /* tighten grid gap on mobile */
+  }
+}
+
+/* Mobile adjustments for Contact button */
+@media (max-width: 768px) {
+  .contactmain-btn {
+    padding: 10px 16px; /* smaller padding on mobile */
+    font-size: 14px;    /* slightly smaller text */
+    gap: 4px;           /* less space between icon and text */
+  }
+
+  .contactmain-btn svg {
+    font-size: 20px;    /* smaller icon on mobile */
+  }
+}
+/* Remove focus outline and border for inputs and textarea */
+.contactmain-input:focus,
+.contactmain-textarea:focus {
+  outline: none;
+  border-color: #ddd; /* keep the original border color */
+  box-shadow: none;   /* remove any focus shadow */
+}
+/* =========================
+   Mobile adjustments for reCAPTCHA & Submit Button
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Reduce spacing and resize button */
+  .contactmain-btn {
+    padding: 10px 16px; /* smaller padding */
+    font-size: 14px;    /* smaller text */
+    gap: 4px;           /* less space between icon and text */
+  }
+
+  .contactmain-btn svg {
+    font-size: 20px;    /* smaller icon on mobile */
+  }
+
+  /* reCAPTCHA widget adjustments */
+  .grecaptcha-badge, 
+  .grecaptcha {
+    transform: scale(0.85); /* scale down reCAPTCHA on mobile */
+    transform-origin: 0 0;  /* align top-left */
+  }
+
+  /* Center reCAPTCHA and button */
+  .contactmain-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* keep button left-aligned if needed */
+    gap: 16px;
+  }
+
+  /* Optional: make reCAPTCHA and button full width */
+  .grecaptcha {
+    width: 100% !important;
+  }
+}
+@media (max-width: 1024px) {
+  .contactmain-banner {
+    padding: 100px 20px;
+  }
+
+  .contactmain-heading {
+    font-size: 42px;
+  }
+
+  .contactmain-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .contactmain-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* ---------- Tablets (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .contactmain-banner {
+    padding: 80px 16px;
+  }
+
+  .contactmain-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .contactmain-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .contactmain-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Mobile (≤ 576px) ---------- */
+@media (max-width: 576px) {
+  .contactmain-banner {
+    padding: 70px 12px;
+  }
+
+  .contactmain-heading {
+    font-size: 28px;
+  }
+
+  .contactmain-breadcrumb {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .contactmain-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media (max-width: 400px) {
+  .contactmain-banner {
+    padding: 60px 10px;
+  }
+
+  .contactmain-heading {
+    font-size: 24px;
+  }
+
+  .contactmain-breadcrumb {
+    font-size: 13px;
+  }
+
+  .contactmain-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Optional: Reset breadcrumb to row for short text ---------- */
+@media (max-width: 576px) {
+  .contactmain-breadcrumb {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+.contactmain-breadcrumb-link {
+  color: #f15928;        /* matches the home icon */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+
+
+/* Remove unwanted space after map */
+.contact-map {
+  margin: 0;
+  padding: 0;
+  line-height: 0; /* IMPORTANT: removes iframe gap */
+}
+
+.contact-map iframe {
+  display: block; /* removes inline iframe gap */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
+
+
+

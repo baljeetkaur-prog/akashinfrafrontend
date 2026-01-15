@@ -1,0 +1,539 @@
+/* ================================
+   Banner
+=================================== */
+.infra-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.infra-banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.infra-banner-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.infra-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.infra-breadcrumb-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+
+/* ================================
+   Banner – Media Queries
+=================================== */
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .infra-banner {
+    padding: 100px 20px;
+  }
+
+  .infra-banner-heading {
+    font-size: 42px;
+  }
+
+  .infra-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .infra-breadcrumb-icon {
+    font-size: 19px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .infra-banner {
+    padding: 80px 16px;
+  }
+
+  .infra-banner-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .infra-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .infra-breadcrumb-icon {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .infra-banner {
+    padding: 70px 12px;
+  }
+
+  .infra-banner-heading {
+    font-size: 28px;
+  }
+
+  .infra-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .infra-breadcrumb-icon {
+    font-size: 17px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .infra-banner {
+    padding: 60px 10px;
+  }
+
+  .infra-banner-heading {
+    font-size: 24px;
+  }
+
+  .infra-breadcrumb {
+    font-size: 13px;
+    gap: 4px;
+  }
+
+  .infra-breadcrumb-icon {
+    font-size: 16px;
+  }
+}
+
+/* ================================
+   Main Content
+=================================== */
+.infra-main-content {
+  padding: 60px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.infra-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.infra-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.infra-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.infra-sub-heading {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.infra-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/* Right Image */
+.infra-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.infra-right img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* Section text */
+.infra-section-text {
+  max-width: 1200px;
+  margin: 20px auto 40px auto;
+}
+
+/* ================================
+   Points With Checks
+=================================== */
+.infra-points-section {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.infra-points-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.infra-points-section li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.infra-points-section li::before {
+  content: "✓";
+  font-family: cursive;
+  color: #f15928;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+/* ================================
+   FAQ
+=================================== */
+.infra-faq-section {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.infra-faq-item {
+  padding: 13px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.infra-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.infra-faq-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.infra-faq-icon {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.infra-faq-item.open h3 {
+  color: #f15928;
+}
+
+.infra-faq-item.open .infra-faq-icon {
+  color: #f15928;
+  transform: rotate(180deg);
+}
+
+.infra-faq-answer {
+  margin-top: 20px;
+  padding-left: 34px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ================================
+   Responsive
+=================================== */
+@media (max-width: 768px) {
+  .infra-heading {
+    font-size: 26px;
+  }
+
+  .infra-para {
+    font-size: 14px;
+  }
+
+  .infra-content-wrapper {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .infra-heading {
+    font-size: 22px;
+  }
+
+  .infra-para {
+    font-size: 13px;
+  }
+}
+/* ===========================
+   Infra Banner – Match About
+============================ */
+@media (max-width: 1024px) {
+  .infra-banner { padding: 100px 20px; }
+  .infra-banner-heading { font-size: 42px; }
+  .infra-breadcrumb { font-size: 16px; gap: 8px; }
+  .infra-breadcrumb-icon { font-size: 19px; }
+}
+
+@media (max-width: 768px) {
+  .infra-banner { padding: 80px 16px; }
+  .infra-banner-heading { font-size: 34px; line-height: 1.2; }
+  .infra-breadcrumb { font-size: 15px; gap: 6px; }
+  .infra-breadcrumb-icon { font-size: 18px; }
+
+  .infra-content-wrapper { flex-direction: column !important; gap: 20px; }
+
+  /* Typography match About Section */
+  .infra-heading { font-size: 26px; }
+  .infra-sub-heading { font-size: 22px; }
+  .infra-para { font-size: 14px; line-height: 1.5; }
+  .infra-points-section li { font-size: 14px; line-height: 1.5; }
+  .infra-faq-header h3 { font-size: 16px; }
+  .infra-faq-answer { font-size: 14px; line-height: 1.5; }
+}
+
+@media (max-width: 576px) {
+  .infra-banner { padding: 70px 12px; }
+  .infra-banner-heading { font-size: 28px; }
+  .infra-breadcrumb { font-size: 14px; gap: 5px; }
+  .infra-breadcrumb-icon { font-size: 17px; }
+
+  .infra-heading { font-size: 22px; }
+  .infra-sub-heading { font-size: 20px; }
+  .infra-para { font-size: 14px; line-height: 1.5; }
+  .infra-points-section li { font-size: 14px; }
+  .infra-faq-header h3 { font-size: 14px; }
+  .infra-faq-answer { font-size: 14px; }
+}
+
+@media (max-width: 400px) {
+  .infra-banner { padding: 60px 10px; }
+  .infra-banner-heading { font-size: 24px; }
+  .infra-breadcrumb { font-size: 13px; gap: 4px; }
+  .infra-breadcrumb-icon { font-size: 16px; }
+
+  .infra-heading { font-size: 20px; }
+  .infra-sub-heading { font-size: 18px; }
+  .infra-para { font-size: 14px; line-height: 1.5; }
+  .infra-points-section li { font-size: 14px; }
+  .infra-faq-header h3 { font-size: 14px; }
+  .infra-faq-answer { font-size: 14px; }
+}
+
+/* ==============================
+   Reduce Top/Bottom Spacing on Mobile
+   ============================== */
+@media (max-width: 768px) {
+  .infra-main-content {
+    padding-top: 30px !important;  /* was 60px */
+    padding-bottom: 30px !important;
+  }
+
+  .infra-content-wrapper {
+    margin-bottom: 20px !important;
+    gap: 20px;
+  }
+
+  .infra-section-text {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .infra-points-section {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .infra-faq-section {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .infra-main-content {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .infra-content-wrapper {
+    margin-bottom: 15px !important;
+    gap: 15px;
+  }
+
+  .infra-section-text {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .infra-points-section {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .infra-faq-section {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .infra-main-content {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+  }
+
+  .infra-content-wrapper {
+    margin-bottom: 10px !important;
+    gap: 10px;
+  }
+
+  .infra-section-text {
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .infra-points-section {
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .infra-faq-section {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+}
+/* ==============================
+   First Section Padding on Mobile
+   ============================== */
+@media (max-width: 768px) {
+  /* Add more top padding before first section */
+  .infra-main-content:first-of-type {
+    padding-top: 60px !important; /* more breathing space at top */
+  }
+}
+
+@media (max-width: 576px) {
+  .infra-main-content:first-of-type {
+    padding-top: 50px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .infra-main-content:first-of-type {
+    padding-top: 50px !important;
+  }
+}
+/* ==============================
+   Infra – Match About Section Mobile Fonts & Spacing
+============================== */
+
+/* Tablets and below (≤768px) */
+@media (max-width: 768px) {
+  /* Top padding for first section */
+  .infra-main-content:first-of-type {
+    padding-top: 60px !important;
+  }
+
+  /* Reduce spacing between content sections */
+  .infra-main-content {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .infra-content-wrapper {
+    flex-direction: column !important;
+    gap: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  .infra-section-text,
+  .infra-points-section,
+  .infra-faq-section {
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Font sizes matching About section */
+  .infra-heading { font-size: 26px; }
+  .infra-sub-heading { font-size: 22px; }
+  .infra-para { font-size: 14px; line-height: 1.5; }
+  .infra-points-section li { font-size: 14px; line-height: 1.5; }
+  .infra-faq-header h3 { font-size: 16px; }
+  .infra-faq-answer { font-size: 14px; line-height: 1.5; }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .infra-main-content:first-of-type { padding-top: 50px !important; }
+  .infra-main-content { padding-top: 20px !important; padding-bottom: 20px !important; }
+  .infra-content-wrapper { margin-bottom: 15px !important; gap: 15px; }
+  .infra-section-text,
+  .infra-points-section,
+  .infra-faq-section { margin-top: 10px !important; margin-bottom: 15px !important; }
+
+  /* Font sizes matching About section */
+  .infra-heading { font-size: 22px; }
+  .infra-sub-heading { font-size: 20px; }
+  .infra-para { font-size: 14px; line-height: 1.5; }
+  .infra-points-section li { font-size: 14px; }
+  .infra-faq-header h3 { font-size: 14px; }
+  .infra-faq-answer { font-size: 14px; }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .infra-main-content:first-of-type { padding-top: 50px !important; }
+  .infra-main-content { padding-top: 15px !important; padding-bottom: 15px !important; }
+  .infra-content-wrapper { margin-bottom: 10px !important; gap: 10px; }
+  .infra-section-text,
+  .infra-points-section,
+  .infra-faq-section { margin-top: 5px !important; margin-bottom: 10px !important; }
+
+  /* Font sizes matching About section */
+  .infra-heading { font-size: 20px; }
+  .infra-sub-heading { font-size: 18px; }
+  .infra-para { font-size: 14px; }
+  .infra-points-section li { font-size: 14px; }
+  .infra-faq-header h3 { font-size: 14px; }
+  .infra-faq-answer { font-size: 14px; }
+}
+.infra-breadcrumb-link {
+  color: #f15928;         /* match icon color or your preferred color */
+  text-decoration: none;   /* remove underline */
+  font-weight: 500;
+
+}
+

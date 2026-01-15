@@ -1,0 +1,223 @@
+/* MAIN WRAPPER */
+.featuresec-wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-color: #111;
+  padding: 80px 20px;
+}
+
+.featuresec-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.featuresec-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  z-index: 2;
+  text-align: center;
+}
+
+/* HEADINGS */
+.featuresec-heading {
+  font-size: 55px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.featuresec-subtext {
+  font-size: 17px;
+  color: #ddd;
+  width: 70%;
+  margin: 15px auto 50px;
+  line-height: 1.6;
+}
+
+/* GRID 4 + 4 */
+.featuresec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  position: relative;
+    row-gap: 50px;
+}
+
+/* VERTICAL DIVIDERS */
+.featuresec-item {
+  padding: 0 35px;
+  text-align: left;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+    cursor: pointer;
+  height: 100%;
+}
+
+
+.featuresec-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15px;
+  height: 85%;
+  width: 1px;
+  background: rgba(255,255,255,0.2);
+}
+
+/* CONTENT STRUCTURE INSIDE EACH ITEM */
+.featuresec-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes number to extreme right */
+}
+
+/* ICON */
+.featuresec-icon-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid #f15928;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #f15928;
+}
+.featuresec-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid #f15928;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #f15928;
+  transition: all 0.6s ease-in-out;
+}
+
+.featuresec-item:hover .featuresec-icon {
+  background: #f15928;
+  color: #fff;
+}
+
+/* NUMBER */
+.featuresec-number {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.25); /* base color */
+  margin-top: 5px;
+  position: relative;
+
+  /* Create sliding highlight inside text */
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.25) 0%,
+    rgba(255,255,255,0.85) 50%,
+    rgba(255,255,255,0.25) 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transition: all 0.5s ease;
+}
+.featuresec-item:hover .featuresec-number {
+  background-position: 100% 0; /* slides gradient from left to right */
+}
+/* TEXT CONTENT */
+.featuresec-title {
+  font-size: 25px;
+  color: #fff;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.featuresec-para {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.featuresec-link {
+  margin-top: auto; /* pushes link to bottom consistently */
+  color: #f15928;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.featuresec-link:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .featuresec-heading {
+    font-size: 35px;
+  }
+
+  .featuresec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featuresec-item:not(:last-child)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .featuresec-heading {
+    font-size: 30px;
+  }
+
+  .featuresec-subtext {
+    width: 100%;
+  }
+}
+.featuresec-item:nth-child(4)::after,
+.featuresec-item:nth-child(8)::after {
+  display: none;
+}
+/* Desktop vertical dividers remain as is */
+.featuresec-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15px;
+  height: 85%;
+  width: 1px;
+  background: rgba(255,255,255,0.2);
+}
+
+/* Mobile: horizontal dividers */
+@media (max-width: 992px) {
+  .featuresec-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px; /* spacing between cards */
+  }
+
+  /* Remove all vertical dividers */
+  .featuresec-item::after {
+    display: none;
+  }
+
+  /* Add horizontal divider for all but last item */
+  .featuresec-item:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: relative; /* relative so it flows with content */
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 20px 0 0; /* space above divider */
+  }
+}

@@ -1,0 +1,1069 @@
+/* Metro.css */
+
+/* Banner */
+.metro-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+.metro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.metro-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.metro-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.metro-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+/* ================================
+   Metro Banner – Media Queries
+================================ */
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .metro-banner {
+    padding: 100px 20px;
+  }
+
+  .metro-heading {
+    font-size: 42px;
+  }
+
+  .metro-breadcrumb {
+    font-size: 16px;
+  }
+
+  .metro-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .metro-banner {
+    padding: 80px 16px;
+  }
+
+  .metro-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .metro-breadcrumb {
+    font-size: 15px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .metro-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .metro-banner {
+    padding: 70px 12px;
+  }
+
+  .metro-heading {
+    font-size: 28px;
+  }
+
+  .metro-breadcrumb {
+    font-size: 14px;
+    gap: 6px;
+  }
+
+  .metro-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .metro-banner {
+    padding: 60px 10px;
+  }
+
+  .metro-heading {
+    font-size: 24px;
+  }
+
+  .metro-breadcrumb {
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .metro-home-icon {
+    font-size: 16px;
+  }
+}
+
+
+/* ======================
+  Centralized content wrapper
+====================== */
+.metro-content-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* First Section */
+.metro-content-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding-top: 5px; 
+}
+
+.metro-left-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.metro-right-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.metro-right-image img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+
+/* Headings, paragraphs */
+.metro-big-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+  margin-top:0; 
+}
+
+.metro-para {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0px;
+}
+
+/* Points */
+/* Metro Points Section */
+.metro-points-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.metro-points-list li {
+  position: relative;
+  padding-left: 30px;      /* space for the tick */
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  font-weight: 600;         /* slightly bold text */
+}
+
+/* Cursive check mark before each li */
+.metro-points-list li::before {
+  content: "✓";
+  color: #f15928;
+  font-weight: 700;         /* bold tick */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+/* Two Images Section */
+.metro-two-images-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.metro-image-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.metro-image-card img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.metro-image-card p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* FAQ Section */
+.metro-faq-section {
+  margin: 40px 0;
+}
+
+.faq-item {
+  padding: 13px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.faq-header h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.faq-icon {
+  font-size: 20px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-item.open h3 {
+  color: #f15928;
+}
+
+.faq-item.open .faq-icon {
+  color: #f15928;
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  margin-top: 20px;
+  padding-left: 34px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .metro-two-images-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .metro-content-wrapper {
+    flex-direction: column-reverse; 
+  }
+  .metro-right-image {
+    margin-bottom: 20px;
+  }
+}
+.metro-section-text .metro-big-heading {
+  position: relative;
+  display: inline-block; /* ensures border fits text width */
+  padding-bottom: 10px;   /* space between text and border */
+  border-bottom: 2px solid #f15928;
+  margin-bottom:0; 
+}
+@media (max-width: 768px) {
+  .metro-content-wrapper {
+    flex-direction: column; /* stack vertically: content first, image second */
+    gap: 20px; /* optional spacing */
+  }
+
+  .metro-right-image {
+    margin-bottom: 0; /* reset margin */
+    justify-content: center; /* center the image */
+  }
+
+  .metro-right-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Large Tablets (≤1024px) */
+@media (max-width: 1024px) {
+  .metro-big-heading { font-size: 28px; }
+  .metro-para { font-size: 15px; line-height: 1.6; }
+  .metro-image-heading { font-size: 18px; }
+  .metro-points-list li { font-size: 15px; }
+  .metro-faq-item h3 { font-size: 18px; }
+  .metro-faq-item p { font-size: 15px; }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .metro-content-wrapper {
+    flex-direction: column; /* LEFT content first, IMAGE second */
+    gap: 20px;
+  }
+
+  .metro-left-content {
+    order: 1;
+    text-align: left;
+  }
+
+  .metro-right-image {
+    order: 2;
+    justify-content: center;
+  }
+
+  .metro-big-heading { font-size: 24px; }
+  .metro-para { font-size: 14px; line-height: 1.6; }
+  .metro-image-heading { font-size: 18px; }
+  .metro-points-list li { font-size: 14px; }
+  .metro-right-image img { width: 100%; max-height: 260px; object-fit: cover; }
+  .metro-faq-item h3 { font-size: 18px; }
+  .metro-faq-item p { font-size: 14px; }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .metro-big-heading { font-size: 22px; }
+  .metro-para { font-size: 13px; }
+  .metro-image-heading { font-size: 16px; }
+  .metro-points-list li { font-size: 13px; }
+  .metro-right-image img { max-height: 220px; }
+  .metro-faq-item h3 { font-size: 16px; }
+  .metro-faq-item p { font-size: 14px; }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .metro-big-heading { font-size: 20px; }
+  .metro-para { font-size: 12.5px; }
+  .metro-image-heading { font-size: 15px; }
+  .metro-points-list li { font-size: 12.5px; }
+  .metro-right-image img { max-height: 180px; }
+  .metro-faq-item h3 { font-size: 15px; }
+  .metro-faq-item p { font-size: 13px; }
+}
+/* ================================
+   MOBILE SPACING ADJUSTMENTS
+================================= */
+
+/* Mobile devices (≤576px) */
+@media (max-width: 576px) {
+  /* Reduce space between banner and main content */
+  .metro-content-wrapper {
+    margin-top: -40px; /* smaller top space */
+    gap: 15px;        /* optional, reduce spacing between content and image */
+  }
+
+  /* Reduce top margin above metro image card paragraphs */
+  .metro-two-images-row {
+    margin-top: 15px; /* reduce from 40px */
+    margin-bottom: 20px; /* optional */
+    gap: 20px; /* optional: reduce gap between image cards */
+  }
+
+  .metro-image-card {
+    margin-top: 0;  /* remove extra spacing */
+  }
+
+  .metro-image-card .metro-para {
+    margin-top: 8px;   /* smaller spacing above each paragraph */
+    margin-bottom: 6px; /* optional smaller bottom spacing */
+  }
+}
+
+/* Small Mobile devices (≤400px) */
+@media (max-width: 400px) {
+  .metro-content-wrapper {
+    margin-top: -50px; /* even smaller top space */
+    gap: 10px;       /* reduce spacing */
+  }
+
+  .metro-two-images-row {
+    margin-top: 10px; /* reduce top space */
+    margin-bottom: 15px; 
+    gap: 15px; /* smaller gap between cards */
+  }
+
+  .metro-image-card .metro-para {
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+}
+.aboutmain-banner {
+  width: 100%;
+  padding: 120px 20px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  background-color: #111;
+}
+
+.aboutmain-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutmain-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.aboutmain-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.aboutmain-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+
+/* Content Wrapper */
+.aboutmain-content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Left Image */
+.aboutmain-left-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aboutmain-left-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Right Content */
+.aboutmain-right-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Typography */
+.aboutmain-small-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #f15928;
+  margin-top:0; 
+  margin-bottom: 0px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.aboutmain-big-heading {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-top:2px; 
+  color: #111;
+}
+
+.aboutmain-para {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Contact Box */
+.aboutmain-contact-box {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.aboutmain-contact-icon {
+  width: 55px;
+  height: 55px;
+  background-color: #f15928;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutmain-contact-icon svg {
+  color: #fff;
+  font-size: 26px;
+}
+
+.aboutmain-contact-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutmain-question {
+  font-size: 15px;
+  font-weight: 500;
+  color: #777;
+  margin: 0;
+}
+
+.aboutmain-number {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin: 3px 0 0;
+}
+
+/* Mission & Vision Section Wrapper */
+.aboutmain-mission-vision-wrapper {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+/* Each Card */
+.aboutmain-card {
+  flex: 1;
+  min-width: 320px;
+  background: #f9f9f9;
+  padding: 25px 25px 30px;
+  border-bottom: 7px solid #f15928; /* Thick bottom border */
+  border-right: 4px solid #f15928;  /* Thin right border */
+   border-bottom-right-radius: 15px; 
+}
+
+/* Card Header (Icon + Heading) */
+.aboutmain-card-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* Icon Circle */
+.aboutmain-card-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #f15928;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutmain-icon {
+  font-size: 40px;
+  color: #fff; /* black icon */
+}
+/* Heading */
+.aboutmain-card-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+}
+
+/* Paragraph */
+.aboutmain-card-para {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Modi Vision Section Wrapper */
+.aboutmain-modi-vision-wrapper {
+  max-width: 1200px;
+  margin: 60px auto 0;
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f9f9f9; /* optional light background */
+  padding: 40px 20px;
+  padding-bottom:0; 
+  padding-left: 60px; 
+}
+
+/* Left content */
+.aboutmain-modi-left-content {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: left; /* add this */
+  align-items: flex-start; /* ensure content aligns left */
+}
+/* Right image */
+.aboutmain-modi-right-image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutmain-modi-right-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .aboutmain-modi-vision-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .aboutmain-modi-left-content {
+    align-items: center;
+  }
+
+  .aboutmain-modi-right-image {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+/* Key Strengths Section */
+.aboutmain-strengths-section {
+ background: #fff7f0;
+  padding: 20px 20px;
+  max-width: 1200px;
+  margin: 60px auto;
+  margin-bottom: 10px; 
+  box-sizing: border-box; /* ✅ include padding in width */
+}
+
+.aboutmain-strengths-wrapper {
+  max-width: 1200px; /* limits width */
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Each Card */
+.aboutmain-strength-card {
+  flex: 1;
+  min-width: 250px;
+   background: #fff7f0;
+  text-align: center;
+  padding: 30px 20px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.aboutmain-strength-card:hover{
+  cursor: pointer;
+}
+
+/* Icon */
+.aboutmain-strength-icon {
+  width: 80px;
+  height: 80px;
+  background-color: transparent; 
+  color: #f15928;
+  font-size: 45px;
+  border-radius: 50%;
+  display: flex;
+  border: 3px solid #f15928; 
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px;
+}
+
+/* Heading */
+.aboutmain-strength-heading {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Paragraph */
+.aboutmain-strength-para {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+/* Add vertical divider between cards except last one */
+.aboutmain-strength-card:not(:last-child) {
+  border-right: 2px solid #ccc;  /* vertical line */
+  padding-right: 20px; /* optional spacing from line */
+}
+
+/* Adjust spacing for cards that have border */
+.aboutmain-strength-card:not(:last-child) {
+  margin-right: 20px; /* gap between cards and divider */
+}
+
+/* Optional: remove margin on wrapper gap */
+.aboutmain-strengths-wrapper {
+  gap: 0; /* use border + padding instead of flex gap for divider */
+}
+/* For screens below 768px: content comes first */
+@media (max-width: 768px) {
+  .aboutmain-content-wrapper {
+    flex-direction: column-reverse !important;
+    text-align: left;
+  }
+
+  .aboutmain-right-content {
+    text-align: left;
+    align-items: left;
+  }
+
+  .aboutmain-left-image {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .aboutmain-modi-vision-wrapper {
+    flex-direction: column-reverse;
+    padding-left: 20px !important;
+    text-align: center;
+  }
+
+  .aboutmain-modi-left-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .aboutmain-modi-right-image {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutmain-strengths-wrapper {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+
+  .aboutmain-strength-card {
+    border-right: none !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+@media (max-width: 768px) {
+  .aboutmain-mission-vision-wrapper {
+    justify-content: center !important;  /* ⭐ Center cards */
+    align-items: center !important;      /* ⭐ Align vertically */
+    text-align: center !important;       /* ⭐ Center text */
+  }
+
+  .aboutmain-card {
+    margin: 0 auto;                     /* ⭐ Center each card */
+  }
+}
+/* ============================
+   MOBILE FONT SIZE REDUCTIONS
+   ============================ */
+@media (max-width: 768px) {
+
+  /* Banner Heading */
+  .aboutmain-heading {
+    font-size: 32px;
+  }
+
+  /* Breadcrumb */
+  .aboutmain-breadcrumb {
+    font-size: 14px;
+  }
+
+  /* Right Content Headings */
+  .aboutmain-small-heading {
+    font-size: 14px;
+  }
+
+  .aboutmain-big-heading {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .aboutmain-para {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Mission – Vision Cards */
+  .aboutmain-card-heading {
+    font-size: 24px;
+  }
+
+  .aboutmain-card-para {
+    font-size: 14px;
+  }
+
+  /* Modi Vision Heading */
+  .aboutmain-modi-left-content .aboutmain-big-heading {
+    font-size: 26px;
+  }
+
+  /* Strength Cards */
+  .aboutmain-strength-heading {
+    font-size: 20px;
+  }
+
+  .aboutmain-strength-para {
+    font-size: 14px;
+  }
+
+  /* Contact Box */
+  .aboutmain-question {
+    font-size: 14px;
+  }
+
+  .aboutmain-number {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .aboutmain-content {
+    padding-top: 50px !important;
+  }
+}
+/* ==============================
+   ABOUT BANNER – MOBILE STYLING LIKE GALLERY
+================================= */
+
+/* ---------- Large Tablets (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .aboutmain-banner {
+    padding: 100px 20px;
+  }
+
+  .aboutmain-heading {
+    font-size: 42px;
+  }
+
+  .aboutmain-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .aboutmain-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* ---------- Tablets (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .aboutmain-banner {
+    padding: 80px 16px;
+  }
+
+  .aboutmain-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .aboutmain-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .aboutmain-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Mobile (≤ 576px) ---------- */
+@media (max-width: 576px) {
+  .aboutmain-banner {
+    padding: 70px 12px;
+  }
+
+  .aboutmain-heading {
+    font-size: 28px;
+  }
+
+  .aboutmain-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .aboutmain-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media (max-width: 400px) {
+  .aboutmain-banner {
+    padding: 60px 10px;
+  }
+
+  .aboutmain-heading {
+    font-size: 24px;
+  }
+
+  .aboutmain-breadcrumb {
+    font-size: 13px;
+  }
+
+  .aboutmain-home-icon {
+    font-size: 16px;
+  }
+}
+/* ==============================
+   Metro – Mobile Adjustments
+   Match About Section Fonts & Reduce Top Spacing
+============================== */
+
+/* Tablets and below (≤768px) */
+@media (max-width: 768px) {
+  /* Reduce spacing between content sections */
+  .metro-content-wrapper,
+  .metro-two-images-row,
+  .metro-points-list,
+  .metro-faq-section {
+    margin-top: 10px;   /* smaller top space */
+    margin-bottom: 15px; /* reduce bottom space */
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .metro-image-card {
+    margin-bottom: 10px;
+  }
+
+  .metro-right-image {
+    margin-bottom: 15px;
+  }
+
+  /* Font sizes match About Section */
+  .metro-big-heading { font-size: 26px; line-height: 1.3; }
+  .metro-para { font-size: 14px; line-height: 1.5; }
+  .metro-image-heading { font-size: 18px; }
+  .metro-image-card p,
+  .metro-points-list li,
+  .faq-answer { font-size: 14px; }
+}
+
+/* Mobile (≤576px) */
+@media (max-width: 576px) {
+  .metro-content-wrapper,
+  .metro-two-images-row,
+  .metro-points-list,
+  .metro-faq-section {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .metro-image-card {
+    margin-bottom: 8px;
+  }
+
+  .metro-right-image {
+    margin-bottom: 12px;
+  }
+
+  /* Font sizes match About Section */
+  .metro-big-heading { font-size: 22px; }
+  .metro-para { font-size: 14px; }
+  .metro-image-heading { font-size: 16px; }
+  .metro-image-card p,
+  .metro-points-list li,
+  .faq-answer { font-size: 14px; }
+}
+
+/* Small Mobile (≤400px) */
+@media (max-width: 400px) {
+  .metro-content-wrapper,
+  .metro-two-images-row,
+  .metro-points-list,
+  .metro-faq-section {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .metro-image-card {
+    margin-bottom: 6px;
+  }
+
+  .metro-right-image {
+    margin-bottom: 8px;
+  }
+
+  /* Font sizes match About Section */
+  .metro-big-heading { font-size: 20px; }
+  .metro-para { font-size: 14px; }
+  .metro-image-heading { font-size: 15px; }
+  .metro-image-card p,
+  .metro-points-list li,
+  .faq-answer { font-size: 14px; }
+}
+.metro-breadcrumb-link {
+  color: #f15928;        /* match the home icon color */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+

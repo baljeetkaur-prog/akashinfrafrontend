@@ -1,0 +1,87 @@
+/* ===== Admin Contact Queries Styling ===== */
+
+/* BODY/CONTAINER */
+.contact-admin {
+  width: 100%;
+  padding: 10px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  box-sizing: border-box;
+}
+
+/* PAGE TITLE */
+.contact-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* TABLE WRAPPER */
+.contact-admin-table-wrapper {
+  overflow-x: auto;
+
+}
+
+/* TABLE STYLING */
+.contact-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-admin-table th,
+.contact-admin-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.contact-admin-table th {
+  background: #0073aa;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-admin-table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-admin-table th,
+  .contact-admin-table td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}
+.contact-admin-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pagination-btn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
+.pagination-btn:hover {
+  background: #0073aa;
+  color: #fff;
+  border-color: #0073aa;
+}
+
+.pagination-btn.active {
+  background: #0073aa;
+  color: #fff;
+  border-color: #0073aa;
+  font-weight: bold;
+}

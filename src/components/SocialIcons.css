@@ -1,0 +1,60 @@
+.social-icons-container {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #f15928; /* default color */
+  font-size: 20px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Different colors for each icon */
+.social-icon:nth-child(1) { background-color: #3b5998; } /* Facebook */
+.social-icon:nth-child(2) { 
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+} /* Instagram */
+.social-icon:nth-child(3) { background-color: #25d366; } /* WhatsApp */
+
+/* Hover effect */
+.social-icon:hover {
+  cursor: pointer;
+}
+
+/* ======================
+   RESPONSIVE STYLES
+======================= */
+@media (max-width: 1024px) {
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+}

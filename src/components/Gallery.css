@@ -1,0 +1,305 @@
+/* Banner */
+.gallerymain-banner {
+  width: 100%;
+  padding: 120px 20px;
+  background-size: cover;
+  background-position: center;
+  background-color: #111;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.gallerymain-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallerymain-heading {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.gallerymain-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.gallerymain-home-icon {
+  color: #f15928;
+  font-size: 20px;
+}
+/* ==============================
+   GALLERY BANNER – MEDIA QUERIES
+================================= */
+
+/* ---------- Large Tablets (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .gallerymain-banner {
+    padding: 100px 20px;
+  }
+
+  .gallerymain-heading {
+    font-size: 42px;
+  }
+
+  .gallerymain-breadcrumb {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  .gallerymain-home-icon {
+    font-size: 19px;
+  }
+}
+
+/* ---------- Tablets (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .gallerymain-banner {
+    padding: 80px 16px;
+  }
+
+  .gallerymain-heading {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .gallerymain-breadcrumb {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .gallerymain-home-icon {
+    font-size: 18px;
+  }
+}
+
+/* ---------- Mobile (≤ 576px) ---------- */
+@media (max-width: 576px) {
+  .gallerymain-banner {
+    padding: 70px 12px;
+  }
+
+  .gallerymain-heading {
+    font-size: 28px;
+  }
+
+  .gallerymain-breadcrumb {
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  .gallerymain-home-icon {
+    font-size: 17px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media (max-width: 400px) {
+  .gallerymain-banner {
+    padding: 60px 10px;
+  }
+
+  .gallerymain-heading {
+    font-size: 24px;
+  }
+
+  .gallerymain-breadcrumb {
+    font-size: 13px;
+  }
+
+  .gallerymain-home-icon {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Optional: Reset breadcrumb to row for short text ---------- */
+@media (max-width: 576px) {
+  .gallerymain-breadcrumb {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+
+.highlighted-text {
+  color: #f15928;
+}
+/* Content Section */
+.gallerymain-content {
+  padding: 80px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Wrapper */
+.gallerymain-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading */
+.gallerymain-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top:0; 
+  color: #111;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.gallerymain-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Image Card */
+.gallerymain-item {
+  overflow: hidden;
+  border-radius: 4px;
+  background: #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallerymain-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease-in-out;
+}
+
+.gallerymain-item:hover img {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gallerymain-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallerymain-title {
+    font-size: 26px;
+  }
+
+  .gallerymain-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gallerymain-item img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallerymain-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallerymain-item img {
+    height: 220px;
+  }
+}
+/* ==============================
+   GALLERY CONTENT – MEDIA QUERIES
+================================= */
+
+/* ---------- Large Tablets (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .gallerymain-content {
+    padding: 60px 20px; /* reduce padding */
+  }
+
+  .gallerymain-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .gallerymain-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallerymain-item img {
+    height: 220px;
+  }
+}
+
+/* ---------- Tablets (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .gallerymain-content {
+    padding: 50px 16px;
+  }
+
+  .gallerymain-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .gallerymain-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .gallerymain-item img {
+    height: 200px;
+  }
+}
+
+/* ---------- Mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .gallerymain-content {
+    padding: 40px 12px;
+  }
+
+  .gallerymain-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .gallerymain-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .gallerymain-item img {
+    height: 180px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media (max-width: 400px) {
+  .gallerymain-content {
+    padding: 30px 10px;
+  }
+
+  .gallerymain-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gallerymain-item img {
+    height: 160px;
+  }
+}
+.gallerymain-breadcrumb-link {
+  color: #f15928;        /* matches the home icon */
+  text-decoration: none;  /* remove underline */
+  font-weight: 500;
+}
+
+
+

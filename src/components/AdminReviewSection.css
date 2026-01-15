@@ -1,0 +1,232 @@
+/* reviewAdmin.css */
+
+/* BODY/CONTAINER */
+.review-admin {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.review-admin h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top:0; 
+}
+
+/* SECTION HEADERS */
+.review-admin h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+  margin-top:10px; 
+}
+
+/* LABELS */
+.review-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  color: #555;
+}
+
+/* INPUTS AND SELECTS */
+.review-admin input[type="text"],
+.review-admin input[type="number"],
+.review-admin select,
+.review-admin textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.review-admin input:focus,
+.review-admin select:focus,
+.review-admin textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.review-admin input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE PREVIEW CONTAINERS */
+.review-admin .image-preview {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.review-admin .image-preview img {
+  display: block;
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+/* ALT INPUTS UNDER IMAGE */
+.review-admin .image-preview input[type="text"] {
+  width: 100%;
+  font-size: 12px;
+  padding: 3px 5px;
+  margin-bottom: 5px;
+}
+
+/* IMAGE BUTTONS */
+.review-admin .image-preview button {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  margin: 2px 2px 0 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.review-admin .image-preview button.replace {
+  background: #0073aa;
+  color: #fff;
+}
+
+.review-admin .image-preview button.replace:hover {
+  background: #005f87;
+}
+
+.review-admin .image-preview button.delete {
+  background: #dc3232;
+  color: #fff;
+}
+
+.review-admin .image-preview button.delete:hover {
+  background: #b52a3a;
+}
+
+/* FEATURE CARDS & BOTTOM STATS */
+.review-admin .feature-card,
+.review-admin .bottom-stat {
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* FEATURE CARD INPUTS */
+.review-admin .feature-card input,
+.review-admin .feature-card select {
+  width: 60%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* ADD BUTTONS */
+.review-admin button.add-item {
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.review-admin button.add-item:hover {
+  background: #005f87;
+}
+
+/* SAVE BUTTON */
+.review-admin button.save-all {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.review-admin button.save-all:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+.review-admin button.save-all:hover:enabled {
+  background: #005f87;
+}
+
+/* FLEX WRAPPER FOR IMAGES */
+.review-admin .image-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .review-admin {
+    padding: 15px 20px;
+  }
+  
+  .review-admin .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+  
+  .review-admin .feature-card input,
+  .review-admin .feature-card select {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* ===== SIMPLE EDITOR FOCUS FIX ===== */
+.review-admin [contenteditable]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.review-admin iframe:focus {
+  outline: none !important;
+}
+
+.review-admin .editor,
+.review-admin .simple-editor,
+.review-admin .editor-container {
+  outline: none;
+}
+
+.review-admin .editor:focus,
+.review-admin .simple-editor:focus,
+.review-admin .editor-container:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.review-admin div:focus-visible {
+  outline: none;
+}

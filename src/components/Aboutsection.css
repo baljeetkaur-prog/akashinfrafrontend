@@ -1,0 +1,389 @@
+.about-section {
+  background-color: #f2f6f6;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.left-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* cover left half */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.about-left {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+/* Stacked images like cards */
+.stacked-images {
+  position: relative;
+  width: 500px;   /* container width increased */
+  height: 650px;  /* container height increased */
+  margin-top: 50px;
+}
+
+.stacked-images .img {
+  position: absolute;
+  width: 400px;   /* image width increased */
+  height: 520px;  /* image height increased */
+  object-fit: cover;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);  /* stronger shadow for emphasis */
+  transition: transform 0.3s;
+}
+
+
+
+
+.stacked-images .img1 {
+  top: 0;
+  left: 150px;
+  z-index: 3;
+    width: 300px; 
+}
+
+
+.stacked-images .img2 {
+  top: 30px;
+  left: 70px;
+   width: 280px;  
+   height: 450px; 
+  transform: rotate(-15deg);
+  z-index: 2;
+}
+
+/* Third image - behind second, even more rotated */
+.stacked-images .img3 {
+  top: 100px;
+  left: -20px;
+   width: 260px; 
+   height: 390px;  
+  transform: rotate(-25deg);
+  z-index: 1;
+}
+
+/* RIGHT SIDE */
+.about-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+.subtitle {
+  color: #f15928;
+  font-size: 16px;
+  font-weight: 600; 
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.heading {
+  font-size: 45px;
+  color: #000;
+  margin-top:0; 
+  margin-bottom: 5px;
+}
+
+.description {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* White Box */
+.white-box {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.points-box {
+  flex: 2;
+}
+
+.point {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.tick {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px; 
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.point-text {
+  font-size: 14px;
+  color: #000;
+}
+
+.highlight-box {
+  flex: 1;
+  background-color: #f15928;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px 10px;
+}
+.highlight-number{
+  font-size: 55px; 
+  margin-bottom:0; 
+  margin-top:0; 
+}
+
+
+.highlight-box p {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+/* Bottom section */
+.bottom-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo-circle img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-text {
+  color: #888;
+  margin-top:4px; 
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.divider {
+  flex: 1;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.about-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;       /* fine for <a> too */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px; 
+  font-weight: 500;
+  text-decoration: none;  /* IMPORTANT: removes underline for <a> */
+  display: inline-block;  /* ensures padding applies correctly */
+}
+
+
+/* ================== Responsive: Tablets / Mobile ================== */
+@media (max-width: 992px) {
+
+  /* Stack content vertically: right side first, images below */
+  .about-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+    align-items: center;
+  }
+
+  /* Right side content full width */
+  .about-right {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* White box centered content */
+  .white-box {
+    flex-direction: column;         /* stack points and highlight */
+    align-items: center;            /* center horizontally */
+    justify-content: center;        /* center vertically */
+    padding: 20px 20px;
+    width: 100%;
+    max-width: 300px;               /* optional, keeps it narrow on large tablets */
+
+  }
+
+ .points-box {
+    width: 100%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start; /* <-- align all points to the start */
+    justify-content: center;
+  }
+
+  .highlight-box {
+    width: 60%;                    /* narrower than white box */
+    max-width: 180px;
+    margin-top: 15px;
+    padding: 15px 10px;
+    display: flex;
+    border-radius:0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;           /* center content */
+  }
+
+  /* Bottom section: keep in row, allow scrolling if needed */
+  .bottom-section {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+  }
+
+  /* Left side stacked images: keep same layout and rotation */
+    .about-left {
+    width: 90%;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    margin-top: 20px;
+  }
+
+ .about-left {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    margin-top: 20px;
+  }
+
+  .stacked-images {
+    width: 250px;   /* container width */
+    height: 340px;  /* container height */
+    position: relative;
+    margin-top:-30px; 
+  }
+
+  .stacked-images .img1 {
+    top: 0;
+    left: 50%;         
+    transform: translateX(-50%); /* center base */
+    width: 250px;      
+    height: 350px;     
+    z-index: 3;
+  }
+
+  .stacked-images .img2 {
+    top: 15px;
+    left: 50%;         
+    transform: translateX(-80%) rotate(-10deg); 
+    width: 180px;
+    height: 300px;
+    z-index: 2;
+  }
+
+  .stacked-images .img3 {
+    top: 30px;
+    left: 50%;         
+    transform: translateX(-100%) rotate(-18deg); 
+    width: 170px;
+    height: 280px;
+    z-index: 1;
+  }
+
+  /* Adjust text sizes */
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .highlight-box h3 {
+    font-size: 36px;
+  }
+
+  .highlight-box p {
+    font-size: 16px;
+  }
+
+  .about-btn {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+
+  .tick {
+    font-size: 14px;
+  }
+
+  .point-text {
+    font-size: 13px;
+  }
+
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-circle img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 14px;
+  }
+}
+.highlight-description{
+  font-size: 20px; 
+}

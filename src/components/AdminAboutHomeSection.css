@@ -1,0 +1,140 @@
+/* ================= ADMIN ABOUT HOME SECTION ================= */
+
+.adminabout-home-section {
+  width: 100%;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* PAGE TITLE */
+.adminabout-home-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #23282d;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* SECTION HEADERS */
+.adminabout-home-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #23282d;
+  margin-top:10px; 
+}
+
+.adminabout-home-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #23282d;
+}
+
+/* LABELS */
+.adminabout-home-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 0;
+  color: #555;
+}
+
+/* INPUTS */
+.adminabout-home-section input[type="text"],
+.adminabout-home-section input[type="number"],
+.adminabout-home-section select,
+.adminabout-home-section textarea {
+  width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.adminabout-home-section input:focus,
+.adminabout-home-section select:focus,
+.adminabout-home-section textarea:focus {
+  outline: none;
+  border-color: #0073aa;
+}
+
+/* FILE INPUT */
+.adminabout-home-section input[type="file"] {
+  border: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+/* IMAGE PREVIEW */
+.adminabout-home-section .image-preview {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.adminabout-home-section .image-preview img {
+  max-width: 120px;
+  max-height: 120px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* IMAGE BUTTONS */
+.adminabout-home-section .image-preview button {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.adminabout-home-section button {
+  border-radius: 3px;
+}
+
+/* SAVE BUTTON */
+.adminabout-home-section .save-about {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 15px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.adminabout-home-section .save-about:hover {
+  background: #005f87;
+}
+
+/* SIMPLE EDITOR FIX */
+.adminabout-home-section [contenteditable]:focus,
+.adminabout-home-section iframe:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .adminabout-home-section {
+    padding: 15px 20px;
+  }
+
+  .adminabout-home-section .image-preview img {
+    max-width: 80px;
+    max-height: 80px;
+  }
+}
